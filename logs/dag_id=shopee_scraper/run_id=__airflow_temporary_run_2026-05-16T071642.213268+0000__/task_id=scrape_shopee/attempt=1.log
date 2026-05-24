@@ -1,0 +1,151 @@
+[2026-05-16T07:16:47.414+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopee_scraper.scrape_shopee __airflow_temporary_run_2026-05-16T07:16:42.213268+00:00__ [queued]>
+[2026-05-16T07:16:47.461+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopee_scraper.scrape_shopee __airflow_temporary_run_2026-05-16T07:16:42.213268+00:00__ [queued]>
+[2026-05-16T07:16:47.462+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-05-16T07:16:47.541+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): scrape_shopee> on 2026-05-16 00:00:00+00:00
+[2026-05-16T07:16:47.559+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopee_scraper', 'scrape_shopee', '__***_temporary_run_2026-05-16T07:16:42.213268+00:00__', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/shopee_dags.py', '--cfg-path', '/tmp/tmp8n54yy3v']
+[2026-05-16T07:16:47.559+0000] {standard_task_runner.py:60} INFO - Started process 220 to run task
+[2026-05-16T07:16:47.566+0000] {standard_task_runner.py:88} INFO - Job 15: Subtask scrape_shopee
+[2026-05-16T07:16:48.271+0000] {task_command.py:423} INFO - Running <TaskInstance: shopee_scraper.scrape_shopee __airflow_temporary_run_2026-05-16T07:16:42.213268+00:00__ [running]> on host a7cf57d75814
+[2026-05-16T07:16:48.818+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='abid' AIRFLOW_CTX_DAG_ID='shopee_scraper' AIRFLOW_CTX_TASK_ID='scrape_shopee' AIRFLOW_CTX_EXECUTION_DATE='2026-05-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='__***_temporary_run_2026-05-16T07:16:42.213268+00:00__'
+[2026-05-16T07:16:48.830+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-16T07:16:48.840+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n        cd /opt/***/scripts &&\n        python playwright_shopee.py\n        ']
+[2026-05-16T07:16:48.931+0000] {subprocess.py:86} INFO - Output:
+[2026-05-16T07:19:40.311+0000] {subprocess.py:93} INFO - 🌐 Membuka browser Playwright...
+[2026-05-16T07:19:40.463+0000] {subprocess.py:93} INFO - 🌍 Membuka Shopee...
+[2026-05-16T07:19:40.465+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.465+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.466+0000] {subprocess.py:93} INFO - 🔐 LOGIN / CAPTCHA (jika ada)
+[2026-05-16T07:19:40.467+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.468+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.469+0000] {subprocess.py:93} INFO - ✅ Terhubung ke MongoDB: shopee_raw.products
+[2026-05-16T07:19:40.471+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.472+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.473+0000] {subprocess.py:93} INFO - 📄 PAGE 1 / 7
+[2026-05-16T07:19:40.474+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.476+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=0
+[2026-05-16T07:19:40.478+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T07:19:40.480+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T07:19:40.482+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T07:19:40.483+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T07:19:40.484+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=5652999346c-3fe7-423b-8281-b8f7fb2d9e4c
+[2026-05-16T07:19:40.491+0000] {subprocess.py:93} INFO - 📄 TITLE :
+[2026-05-16T07:19:40.493+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T07:19:40.494+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T07:19:40.495+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T07:19:40.496+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.497+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.498+0000] {subprocess.py:93} INFO - 📄 PAGE 2 / 7
+[2026-05-16T07:19:40.499+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.500+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=1
+[2026-05-16T07:19:40.502+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T07:19:40.504+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T07:19:40.505+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T07:19:40.506+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T07:19:40.507+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=76305b31a88-858d-4bd5-bc85-02151926a2c0
+[2026-05-16T07:19:40.511+0000] {subprocess.py:93} INFO - 📄 TITLE :
+[2026-05-16T07:19:40.512+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T07:19:40.513+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T07:19:40.514+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T07:19:40.515+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.516+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.517+0000] {subprocess.py:93} INFO - 📄 PAGE 3 / 7
+[2026-05-16T07:19:40.518+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.520+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=2
+[2026-05-16T07:19:40.521+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T07:19:40.522+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T07:19:40.524+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T07:19:40.526+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T07:19:40.527+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=4384049ae-15a9-4d6b-807f-4a775424d8a9
+[2026-05-16T07:19:40.531+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T07:19:40.534+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T07:19:40.535+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T07:19:40.536+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T07:19:40.537+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.538+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.539+0000] {subprocess.py:93} INFO - 📄 PAGE 4 / 7
+[2026-05-16T07:19:40.542+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.544+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=3
+[2026-05-16T07:19:40.545+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T07:19:40.548+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T07:19:40.549+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T07:19:40.550+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T07:19:40.551+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=7915ba04522-e878-428a-a433-cc68df8eabf1
+[2026-05-16T07:19:40.554+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T07:19:40.555+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T07:19:40.556+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T07:19:40.557+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T07:19:40.558+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.559+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.560+0000] {subprocess.py:93} INFO - 📄 PAGE 5 / 7
+[2026-05-16T07:19:40.561+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.562+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=4
+[2026-05-16T07:19:40.563+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T07:19:40.564+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T07:19:40.565+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T07:19:40.566+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T07:19:40.567+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=773932cc537-50c9-4258-90d1-69ac276af5f5
+[2026-05-16T07:19:40.569+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T07:19:40.570+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T07:19:40.571+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T07:19:40.572+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T07:19:40.573+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.574+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.575+0000] {subprocess.py:93} INFO - 📄 PAGE 6 / 7
+[2026-05-16T07:19:40.576+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.577+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=5
+[2026-05-16T07:19:40.579+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T07:19:40.580+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T07:19:40.582+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T07:19:40.583+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T07:19:40.586+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=610663ab592-e52d-4ec6-8a3f-2f432e0af223
+[2026-05-16T07:19:40.587+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T07:19:40.588+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T07:19:40.589+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T07:19:40.590+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T07:19:40.591+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.593+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.594+0000] {subprocess.py:93} INFO - 📄 PAGE 7 / 7
+[2026-05-16T07:19:40.595+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.596+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=6
+[2026-05-16T07:19:40.597+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T07:19:40.598+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T07:19:40.599+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T07:19:40.600+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T07:19:40.602+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=4999fcdd734-b11a-4ece-b818-05092e393406
+[2026-05-16T07:19:40.604+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T07:19:40.605+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T07:19:40.606+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T07:19:40.607+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T07:19:40.608+0000] {subprocess.py:93} INFO - 
+[2026-05-16T07:19:40.609+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.610+0000] {subprocess.py:93} INFO - 📊 SELESAI!
+[2026-05-16T07:19:40.611+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.612+0000] {subprocess.py:93} INFO -    Total produk di-scrape : 0
+[2026-05-16T07:19:40.613+0000] {subprocess.py:93} INFO -    Dokumen baru (insert)  : 0
+[2026-05-16T07:19:40.615+0000] {subprocess.py:93} INFO -    Dokumen updated        : 0
+[2026-05-16T07:19:40.616+0000] {subprocess.py:93} INFO -    Database               : shopee_raw
+[2026-05-16T07:19:40.617+0000] {subprocess.py:93} INFO -    Collection             : products
+[2026-05-16T07:19:40.618+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T07:19:40.619+0000] {subprocess.py:93} INFO - 🛑 Browser ditutup
+[2026-05-16T07:19:41.439+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-16T07:19:42.211+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 440, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2980, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/xcom.py", line 224, in set
+    raise ValueError(f"DAG run not found on DAG {dag_id!r} with ID {run_id!r}")
+ValueError: DAG run not found on DAG 'shopee_scraper' with ID '__***_temporary_run_2026-05-16T07:16:42.213268+00:00__'
+[2026-05-16T07:19:42.575+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=shopee_scraper, task_id=scrape_shopee, execution_date=20260516T000000, start_date=20260516T071647, end_date=20260516T071942
+[2026-05-16T07:19:43.586+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 15 for task scrape_shopee ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(shopee_scraper, scrape_shopee, __airflow_temporary_run_2026-05-16T07:16:42.213268+00:00__, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'scrape_shopee', 'dag_id': 'shopee_scraper', 'run_id': '__airflow_temporary_run_2026-05-16T07:16:42.213268+00:00__', 'map_index': -1, 'start_date': datetime.datetime(2026, 5, 16, 7, 16, 47, 416079, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2026, 5, 16, 7, 19, 42, 440555, tzinfo=Timezone('UTC')), 'duration': 175}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 220)
+[2026-05-16T07:19:43.833+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Competitor Analysis — MSI Gaming Shopee</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f4f6f9; color: #333; }
+  header { background: #c0392b; color: white; padding: 24px 32px; }
+  header h1 { font-size: 24px; margin-bottom: 4px; }
+  header p  { font-size: 13px; opacity: 0.85; }
+  .container { max-width: 1100px; margin: 24px auto; padding: 0 24px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  .card { background: white; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  .card .val { font-size: 28px; font-weight: 700; color: #c0392b; margin-bottom: 4px; }
+  .card .lbl { font-size: 12px; color: #888; }
+  section { background: white; border-radius: 10px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  section h2 { font-size: 16px; margin-bottom: 16px; color: #c0392b; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #c0392b; color: white; padding: 10px 12px; text-align: left; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f0f0; }
+  tr:hover td { background: #fff5f5; }
+  tr:nth-child(even) td { background: #fafafa; }
+  tr:nth-child(even):hover td { background: #fff5f5; }
+  .badge { background: #c0392b; color: white; border-radius: 12px; padding: 2px 10px; font-size: 11px; }
+  footer { text-align: center; padding: 24px; color: #aaa; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎮 Competitor Analysis — MSI Gaming di Shopee</h1>
+  <p>Data diambil dari MySQL Data Warehouse | Dianalisis: 18 May 2026 09:32</p>
+</header>
+
+<div class="container">
+
+  <!-- SUMMARY CARDS -->
+  <div class="cards">
+    <div class="card">
+      <div class="val">152</div>
+      <div class="lbl">Total Seller</div>
+    </div>
+    <div class="card">
+      <div class="val">326</div>
+      <div class="lbl">Total Produk</div>
+    </div>
+    <div class="card">
+      <div class="val">33</div>
+      <div class="lbl">Kota</div>
+    </div>
+    <div class="card">
+      <div class="val">Rp 3,299,000</div>
+      <div class="lbl">Harga Termurah</div>
+    </div>
+    <div class="card">
+      <div class="val">Rp 15,520,714</div>
+      <div class="lbl">Rata-rata Harga</div>
+    </div>
+    <div class="card">
+      <div class="val">Rp 150,000,000</div>
+      <div class="lbl">Harga Termahal</div>
+    </div>
+  </div>
+
+  <!-- TOP SELLERS -->
+  <section>
+    <h2>🏆 Top 10 Seller Terbanyak Produk MSI Gaming</h2>
+    <table><thead><tr><th>shop_id</th><th>lokasi</th><th>jumlah_produk</th><th>harga_min</th><th>harga_max</th><th>harga_avg</th></tr></thead><tbody><tr><td>1065524421</td><td>Jakarta Utara</td><td>25</td><td>12,888,000</td><td>43,338,000</td><td>21,587,680</td></tr><tr><td>697642074</td><td>Jakarta Utara</td><td>17</td><td>13,084,000</td><td>43,329,000</td><td>22,367,412</td></tr><tr><td>261317525</td><td>Bandung</td><td>17</td><td>6,500,000</td><td>11,800,000</td><td>8,688,235</td></tr><tr><td>136426278</td><td>Bandung</td><td>11</td><td>6,499,000</td><td>12,999,000</td><td>9,508,091</td></tr><tr><td>26681244</td><td></td><td>8</td><td>13,449,000</td><td>27,459,000</td><td>17,976,500</td></tr><tr><td>201383432</td><td>Bandung</td><td>7</td><td>5,100,000</td><td>9,650,000</td><td>8,550,000</td></tr><tr><td>1584637029</td><td>Jakarta Barat</td><td>6</td><td>3,299,000</td><td>15,598,000</td><td>11,748,333</td></tr><tr><td>41303795</td><td>Jakarta Barat</td><td>6</td><td>13,089,000</td><td>22,615,000</td><td>18,210,333</td></tr><tr><td>1500950198</td><td>Bandung</td><td>6</td><td>7,300,000</td><td>10,000,000</td><td>8,283,333</td></tr><tr><td>186184847</td><td>Surabaya</td><td>5</td><td>14,649,000</td><td>38,999,000</td><td>25,179,000</td></tr></tbody></table>
+  </section>
+
+  <!-- HARGA PER KOTA -->
+  <section>
+    <h2>🗺️ Distribusi Harga per Kota</h2>
+    <table><thead><tr><th>kota</th><th>jumlah_produk</th><th>harga_min</th><th>harga_max</th><th>harga_avg</th></tr></thead><tbody><tr><td>Bandung</td><td>68</td><td>5,100,000</td><td>16,499,000</td><td>10,296,066</td></tr><tr><td>Jakarta Utara</td><td>50</td><td>6,370,000</td><td>43,338,000</td><td>20,979,360</td></tr><tr><td>Jakarta Pusat</td><td>27</td><td>5,500,000</td><td>150,000,000</td><td>18,589,148</td></tr><tr><td>Jakarta Barat</td><td>25</td><td>3,299,000</td><td>22,615,000</td><td>12,253,160</td></tr><tr><td>Kab. Tangerang</td><td>14</td><td>5,600,000</td><td>15,599,000</td><td>12,912,714</td></tr><tr><td>Bogor</td><td>14</td><td>8,299,000</td><td>17,000,000</td><td>13,134,429</td></tr><tr><td>Depok</td><td>13</td><td>6,250,000</td><td>15,598,000</td><td>12,696,462</td></tr><tr><td>Semarang</td><td>13</td><td>6,850,000</td><td>14,850,000</td><td>11,442,231</td></tr><tr><td>Jakarta Selatan</td><td>12</td><td>12,197,000</td><td>105,039,000</td><td>29,116,750</td></tr><tr><td>Tangerang Selatan</td><td>12</td><td>5,600,000</td><td>17,997,000</td><td>12,506,417</td></tr><tr><td>Surabaya</td><td>12</td><td>10,876,300</td><td>38,999,000</td><td>19,503,025</td></tr><tr><td>Tangerang</td><td>9</td><td>3,649,000</td><td>13,169,000</td><td>10,079,333</td></tr><tr><td>Tidak Diketahui</td><td>8</td><td>13,449,000</td><td>27,459,000</td><td>17,976,500</td></tr><tr><td>Malang</td><td>8</td><td>8,200,000</td><td>102,370,000</td><td>33,439,250</td></tr><tr><td>Bekasi</td><td>7</td><td>12,198,000</td><td>20,197,000</td><td>15,096,714</td></tr></tbody></table>
+  </section>
+
+  <!-- MULTI SELLER -->
+  <section>
+    <h2>⚔️ Produk yang Dijual Banyak Seller (Selisih Harga Terbesar)</h2>
+    <p style="font-size:12px;color:#888;margin-bottom:12px;">
+      Produk yang sama dijual oleh lebih dari 1 seller — cocok untuk cek siapa yang paling kompetitif.
+    </p>
+    <table><thead><tr><th>nama_produk</th><th>jumlah_seller</th><th>harga_terendah</th><th>harga_tertinggi</th><th>selisih_harga</th><th>selisih_pct</th></tr></thead><tbody></tbody></table>
+  </section>
+
+  <!-- TERMURAH -->
+  <section>
+    <h2>💚 Top 10 Produk Termurah</h2>
+    <table><thead><tr><th>nama_produk</th><th>lokasi</th><th>harga</th><th>rating</th></tr></thead><tbody><tr><td>Laptop Lenovo Thinkpad X13 Intel i5 1145G7 10210U 16GB 512GB SSD 13.3 Inch WUXGA Windows 11 Pro FREE HEADSET GAMING</td><td>Jakarta Barat</td><td>3,299,000</td><td>5.0</td></tr><tr><td>Laptop MSI Gaming G Series Windows 11 home single language 64-bit Processor Intel core i7-4720HQ 2.6Ghz Ram 16 GB Penyimpanan 256gb ssd Display Intel HD Graphics 4600 UK 15 inch</td><td>Tangerang</td><td>3,649,000</td><td>1</td></tr><tr><td>Laptop Gaming MSI GS40 Phantom Core i7 16/512 GTX 970</td><td>Jakarta Timur</td><td>4,250,000</td><td>nan</td></tr><tr><td>laptop gaming msi Gl62 Intel core i7-7700HQ Nvidia GTX 1050 ram 16gb/SSD 256gb 15 inch fhd</td><td>Bandung</td><td>5,100,000</td><td>5.0</td></tr><tr><td>Laptop gaming MSI GL63 8RC intel i7-8750H RAM 8 GB/SSD 1000GB Nvidia GTX 1050 15”FHD Display normal</td><td>Kab. Sukoharjo</td><td>5,200,000</td><td>nan</td></tr><tr><td>Laptop MSI Gaming Core i7 7700HQ Nvidia GTX 1050 Ram 16 GB SSD 256GB Laptop Gaming Murah Siap Pakai</td><td>Jakarta Pusat</td><td>5,500,000</td><td>5.0</td></tr><tr><td>Laptop Gaming MSI GF63 Thin Core i5 9300H GTX 1650 8/512 GB</td><td>Kab. Tangerang</td><td>5,600,000</td><td>nan</td></tr><tr><td>Laptop Gaming MSI Dominator Core i7 Ram 20gb Ssd+Hdd Dual Vga Nvidia Siap Pakai COD</td><td>Tangerang Selatan</td><td>5,600,000</td><td>nan</td></tr><tr><td>MSI GL62VR | Core i7 7700HQ Nvidia GTX 1060 6GB | RAM 16GB | Laptop Second Bekas Gaming Desain</td><td>Depok</td><td>6,250,000</td><td>4.0</td></tr><tr><td>SPC LIFE 5 – Intel Core i5|8GB DDR4|Storage: 512GB|Garansi Resmi SPC 1 tahun</td><td>Jakarta Utara</td><td>6,370,000</td><td>5.0</td></tr></tbody></table>
+  </section>
+
+  <!-- TERMAHAL -->
+  <section>
+    <h2>💎 Top 10 Produk Termahal</h2>
+    <table><thead><tr><th>nama_produk</th><th>lokasi</th><th>harga</th><th>rating</th></tr></thead><tbody><tr><td></td><td>Jakarta Pusat</td><td>150,000,000</td><td>nan</td></tr><tr><td>LAPTOP GAMING MSI TITAN 18HX A2XWJG DRAGON EDITION NORSE MYTH ULTRA 9-285HX RTX5090 96GB 6TB 18.0UHD+ 120HZ W11 OHS</td><td>Jakarta Selatan</td><td>105,039,000</td><td>nan</td></tr><tr><td>MSI TITAN 18 HX AI A2XWJG 475 GeForce RTX 5090 24GB/Ultra 9 285HX/64GB/6TB SSD/18" UHD+/W11</td><td>Medan</td><td>103,659,000</td><td>nan</td></tr><tr><td>MSI TITAN 18 HX AI A2XWJG-282ID DRAGON EDITION NORSE MYTH - RTX5090 24GB Intel Core Ultra 9 285HX 6TB SSD 2x48GB RAM Gaming Notebook Laptop - CG - CG</td><td>Malang</td><td>102,370,000</td><td>nan</td></tr><tr><td>MSI TITAN 18 HX AI A2XWJG-282ID DRAGON EDITION NORSE MYTH - RTX5090 24GB Intel Core Ultra 9 285HX 6TB SSD 2x48GB RAM Gaming Notebook Laptop - CG</td><td>Malang</td><td>102,370,000</td><td>nan</td></tr><tr><td>LAPTOP GAMING MSI TITAN 18HX A2XWJG AI ULTRA 9-285HX RTX5090 64GB 6TB 18.0UHD+ MINILED 120HZ W11 OHS</td><td>Jakarta Selatan</td><td>93,929,000</td><td>nan</td></tr><tr><td>MSI STEALTH A16 A3XWGG MERCEDES AI+ RYZEN AI 9 HX 370 RTX5070 - 32GB 1TB W11+OHS 16 QHD 240HZ OLED 100DCIP</td><td>Jakarta Utara</td><td>43,338,000</td><td>1</td></tr><tr><td>MSI STEALTH A16 A3XWGG-023 MERCEDES AMG AI+ GeForce RTX™ 5070 8GB - RYZEN AI 9 HX 370 32GB 1TB WINDOWS 11</td><td>Jakarta Utara</td><td>43,329,000</td><td>nan</td></tr><tr><td>MSI VECTOR 16HX AI A2XWIG ULTRA 9-275HX RTX5080 - 16GB 1TB W11+OHS 16.0QHD+ 240HZ 100DCIP3 24ZRGB 3YR</td><td>Jakarta Utara</td><td>41,511,000</td><td>5.0</td></tr><tr><td>MSI VECTOR 16 HX AI A2XWIG-043 GeForce RTX™ 5080 16GB - ULTRA 9 275HX 16GB 1TB WINDOWS 11 16.0QHD+</td><td>Jakarta Utara</td><td>41,502,000</td><td>4.9</td></tr></tbody></table>
+  </section>
+
+</div>
+
+<footer>
+  Data Warehouse: shopee_dw | Tabel: fact_sales + dim_* | Pipeline: MongoDB → MySQL
+</footer>
+
+</body>
+</html>

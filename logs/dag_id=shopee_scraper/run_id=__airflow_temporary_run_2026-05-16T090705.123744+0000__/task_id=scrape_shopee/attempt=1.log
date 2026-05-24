@@ -1,0 +1,63 @@
+[2026-05-16T09:07:08.864+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-16T09:07:09.150+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopee_scraper.scrape_shopee __airflow_temporary_run_2026-05-16T09:07:05.123744+00:00__ [queued]>
+[2026-05-16T09:07:09.171+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopee_scraper.scrape_shopee __airflow_temporary_run_2026-05-16T09:07:05.123744+00:00__ [queued]>
+[2026-05-16T09:07:09.172+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-16T09:07:09.220+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): scrape_shopee> on 2026-05-16 00:00:00+00:00
+[2026-05-16T09:07:09.231+0000] {standard_task_runner.py:63} INFO - Started process 269 to run task
+[2026-05-16T09:07:09.260+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'shopee_scraper', 'scrape_shopee', '__***_temporary_run_2026-05-16T09:07:05.123744+00:00__', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/shopee_dags.py', '--cfg-path', '/tmp/tmpif5m09is']
+[2026-05-16T09:07:09.291+0000] {standard_task_runner.py:91} INFO - Job 22: Subtask scrape_shopee
+[2026-05-16T09:07:09.693+0000] {task_command.py:426} INFO - Running <TaskInstance: shopee_scraper.scrape_shopee __airflow_temporary_run_2026-05-16T09:07:05.123744+00:00__ [running]> on host 5f29e9b50307
+[2026-05-16T09:07:10.092+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='abid' AIRFLOW_CTX_DAG_ID='shopee_scraper' AIRFLOW_CTX_TASK_ID='scrape_shopee' AIRFLOW_CTX_EXECUTION_DATE='2026-05-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='__***_temporary_run_2026-05-16T09:07:05.123744+00:00__'
+[2026-05-16T09:07:10.094+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-16T09:07:10.135+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-16T09:07:10.136+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n        cd /opt/***/scripts &&\n        python playwright_shopee.py\n        ']
+[2026-05-16T09:07:10.177+0000] {subprocess.py:86} INFO - Output:
+[2026-05-16T09:07:12.674+0000] {subprocess.py:93} INFO - 🌐 Membuka browser Playwright...
+[2026-05-16T09:07:12.684+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-16T09:07:12.685+0000] {subprocess.py:93} INFO -   File "playwright_shopee.py", line 129, in <module>
+[2026-05-16T09:07:12.686+0000] {subprocess.py:93} INFO -     browser = p.chromium.launch_persistent_context(
+[2026-05-16T09:07:12.686+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/playwright/sync_api/_generated.py", line 14716, in launch_persistent_context
+[2026-05-16T09:07:12.687+0000] {subprocess.py:93} INFO -     self._sync(
+[2026-05-16T09:07:12.688+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+[2026-05-16T09:07:12.688+0000] {subprocess.py:93} INFO -     return task.result()
+[2026-05-16T09:07:12.689+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/playwright/_impl/_browser_type.py", line 159, in launch_persistent_context
+[2026-05-16T09:07:12.690+0000] {subprocess.py:93} INFO -     from_channel(await self._channel.send("launchPersistentContext", params)),
+[2026-05-16T09:07:12.690+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 59, in send
+[2026-05-16T09:07:12.691+0000] {subprocess.py:93} INFO -     return await self._connection.wrap_api_call(
+[2026-05-16T09:07:12.691+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 520, in wrap_api_call
+[2026-05-16T09:07:12.692+0000] {subprocess.py:93} INFO -     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+[2026-05-16T09:07:12.692+0000] {subprocess.py:93} INFO - playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+[2026-05-16T09:07:12.693+0000] {subprocess.py:93} INFO - Browser logs:
+[2026-05-16T09:07:12.693+0000] {subprocess.py:93} INFO - 
+[2026-05-16T09:07:12.694+0000] {subprocess.py:93} INFO - <launching> /home/***/.cache/ms-playwright/chromium-1140/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,ThirdPartyStoragePartitioning,LensOverlay,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-sandbox --disable-setuid-sandbox --disable-infobars --start-maximized --user-data-dir=/opt/***/playwright_profile --remote-debugging-pipe about:blank
+[2026-05-16T09:07:12.695+0000] {subprocess.py:93} INFO - <launched> pid=293
+[2026-05-16T09:07:12.695+0000] {subprocess.py:93} INFO - [pid=293][err] [293:293:0516/090712.645046:ERROR:process_singleton_posix.cc(358)] The profile appears to be in use by another Chromium process (785) on another computer (4c6ba494bb65). Chromium has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chromium.
+[2026-05-16T09:07:12.696+0000] {subprocess.py:93} INFO - [pid=293][err] [293:293:0516/090712.645230:ERROR:message_box_dialog.cc(190)] Unable to show message box: Chromium - The profile appears to be in use by another Chromium process (785) on another computer (4c6ba494bb65). Chromium has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chromium.
+[2026-05-16T09:07:12.696+0000] {subprocess.py:93} INFO - Call log:
+[2026-05-16T09:07:12.699+0000] {subprocess.py:93} INFO - <launching> /home/***/.cache/ms-playwright/chromium-1140/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,ThirdPartyStoragePartitioning,LensOverlay,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-sandbox --disable-setuid-sandbox --disable-infobars --start-maximized --user-data-dir=/opt/***/playwright_profile --remote-debugging-pipe about:blank
+[2026-05-16T09:07:12.700+0000] {subprocess.py:93} INFO -   - <launched> pid=293
+[2026-05-16T09:07:12.701+0000] {subprocess.py:93} INFO -   - [pid=293][err] [293:293:0516/090712.645046:ERROR:process_singleton_posix.cc(358)] The profile appears to be in use by another Chromium process (785) on another computer (4c6ba494bb65). Chromium has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chromium.
+[2026-05-16T09:07:12.701+0000] {subprocess.py:93} INFO -   - [pid=293][err] [293:293:0516/090712.645230:ERROR:message_box_dialog.cc(190)] Unable to show message box: Chromium - The profile appears to be in use by another Chromium process (785) on another computer (4c6ba494bb65). Chromium has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chromium.
+[2026-05-16T09:07:12.701+0000] {subprocess.py:93} INFO - 
+[2026-05-16T09:07:12.755+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-05-16T09:07:12.759+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-16T09:07:12.776+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-05-16T09:07:12.782+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=shopee_scraper, task_id=scrape_shopee, run_id=__***_temporary_run_2026-05-16T09:07:05.123744+00:00__, execution_date=20260516T000000, start_date=20260516T090709, end_date=20260516T090712
+[2026-05-16T09:07:12.813+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 22 for task scrape_shopee ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(shopee_scraper, scrape_shopee, __airflow_temporary_run_2026-05-16T09:07:05.123744+00:00__, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'scrape_shopee', 'dag_id': 'shopee_scraper', 'run_id': '__airflow_temporary_run_2026-05-16T09:07:05.123744+00:00__', 'map_index': -1, 'start_date': datetime.datetime(2026, 5, 16, 9, 7, 9, 151621, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2026, 5, 16, 9, 7, 12, 780316, tzinfo=Timezone('UTC')), 'duration': 3}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 269)
+[2026-05-16T09:07:12.854+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-05-16T09:07:12.870+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

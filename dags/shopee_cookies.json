@@ -1,0 +1,132 @@
+[
+  {
+    "name": "REC_T_ID",
+    "value": "265b71ee-51cc-11f1-a21c-bafd7e86dccf",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "REC7iLP4Q",
+    "value": "ab2240d2-094a-4704-aac4-2440831caf94",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "sameSite": "Lax"
+  },
+  {
+    "name": "shopee_webUnique_ccd",
+    "value": "YzIaQsPAnfLVuBQfcR%2BpdQ%3D%3D%7CRyFj2fW01POVnOJNDTX3toI7zxjJcIq4R603Fo4JMXMtAyN0yaJxzYU%2Bsyn4z7eXdI6Ik5l%2F5Ps2m9k%3D%7CnzkTn34GygjdE9Ps%7C08%7C3",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_CDS_CHAT",
+    "value": "fa733447-7528-4ab3-b1a2-a9f1b09dc696",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_CLIENTID",
+    "value": "TzVzazNuc3laZzZ3udufgstskwoqhmqb",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_EC",
+    "value": "MUNzR1poWXVRejdQOE1yVh7Pfnz3jfQluhPybfV94I68ocY5+/nZjglLDhs3guKDn3RJV8SoUGKCykC3ilEEfVx3mmAsTe1NhF+1kNkfmNs+DUg41wiUXxW1LHDAR3md3GPAlVp+uBEFnSTMfxDIyFMnISSRtwAjREbRT0cfgWbSHGPJSv0jc9C60keGGhEERxxOLaG8kGOdGFHi0aw5SQ==.AMdvcMjc6EtHHfqstshkLqE2JsBZwKO76EYa7lcb5YEs",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_F",
+    "value": "ySiS6H2LNhxPinZsDF5o3Kj6uvc90zL8",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_R_T_ID",
+    "value": "m/Co+fqVlzWKpVM7KZU8vfo1e7PTPi2PaeNHxIBLYpmwIIzRBy3SouSEEvCDf3OpHX9BpfbyvlKrR73tzPTOekDTk9MQ0bnC5U7ncVAwfu/n7RRqJ7hNOJEAZd6oj6xSXXjPDyL4zcFgZKfTnv16T1A8iMhEMO6KVR2SsuyCf7I=",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_R_T_IV",
+    "value": "MTBiaE9zMnZ0UWlDOXVKZA==",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_SEC_SI",
+    "value": "v1-SlZoVU9yVjF1Y0dLMkhjYiZJhRr/rTttG6iGzDUPS86chl4B566V6MT/3PSL9nCbM1mhn81cLAl8yKqgT12oXqYi4ZP+82mGovKwsYHP3+Q=",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_SI",
+    "value": "T4gFagAAAAB1STI5b0ZUTzK3QwAAAAAAd2FHb1dGbXc=",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_ST",
+    "value": "b0k2b0VQZk1yQWZTTHd5SYS/vGtcWy0Nk6UBovR9Rzy9lWZ6NWDVoWW8vr9A4WNa496qdnVhq28S3tdwzRXcabPTi8d9trUFSjlJGNohXfifnB8VV6GzeESicHit6+8fcLoBKWjAjE+Ey4yKi1IfDan8Magkwo4+5gYA9+w3ON0xEDrkCEFn0GWMK95d9KkOLGbWQXXf90k/QKoRbRW33g==.ABMW7Y8yV5kr15vPzDFOB+zn0c3WnRj+EQZuCoJP0CKD",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_T_ID",
+    "value": "m/Co+fqVlzWKpVM7KZU8vfo1e7PTPi2PaeNHxIBLYpmwIIzRBy3SouSEEvCDf3OpHX9BpfbyvlKrR73tzPTOekDTk9MQ0bnC5U7ncVAwfu/n7RRqJ7hNOJEAZd6oj6xSXXjPDyL4zcFgZKfTnv16T1A8iMhEMO6KVR2SsuyCf7I=",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_T_IV",
+    "value": "MTBiaE9zMnZ0UWlDOXVKZA==",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SPC_U",
+    "value": "4491535405",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "httpOnly": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ssr-tz",
+    "value": "Asia/Jakarta",
+    "domain": ".shopee.co.id",
+    "path": "/",
+    "sameSite": "Lax"
+  }
+]

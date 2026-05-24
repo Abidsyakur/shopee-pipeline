@@ -1,0 +1,139 @@
+[2026-05-16T08:34:45.810+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-16T08:34:46.129+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopee_scraper.scrape_shopee manual__2026-05-16T08:34:40.840755+00:00 [queued]>
+[2026-05-16T08:34:46.166+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopee_scraper.scrape_shopee manual__2026-05-16T08:34:40.840755+00:00 [queued]>
+[2026-05-16T08:34:46.168+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-16T08:34:46.213+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): scrape_shopee> on 2026-05-16 08:34:40.840755+00:00
+[2026-05-16T08:34:46.242+0000] {standard_task_runner.py:63} INFO - Started process 360 to run task
+[2026-05-16T08:34:46.266+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'shopee_scraper', 'scrape_shopee', 'manual__2026-05-16T08:34:40.840755+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/shopee_dags.py', '--cfg-path', '/tmp/tmp_zw3nmr7']
+[2026-05-16T08:34:46.280+0000] {standard_task_runner.py:91} INFO - Job 18: Subtask scrape_shopee
+[2026-05-16T08:34:46.643+0000] {task_command.py:426} INFO - Running <TaskInstance: shopee_scraper.scrape_shopee manual__2026-05-16T08:34:40.840755+00:00 [running]> on host 4c6ba494bb65
+[2026-05-16T08:34:46.970+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='abid' AIRFLOW_CTX_DAG_ID='shopee_scraper' AIRFLOW_CTX_TASK_ID='scrape_shopee' AIRFLOW_CTX_EXECUTION_DATE='2026-05-16T08:34:40.840755+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-16T08:34:40.840755+00:00'
+[2026-05-16T08:34:46.972+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-16T08:34:47.082+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-16T08:34:47.086+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n        cd /opt/***/scripts &&\n        python playwright_shopee.py\n        ']
+[2026-05-16T08:34:47.121+0000] {subprocess.py:86} INFO - Output:
+[2026-05-16T08:36:44.151+0000] {subprocess.py:93} INFO - 🌐 Membuka browser Playwright...
+[2026-05-16T08:36:44.178+0000] {subprocess.py:93} INFO - 🌍 Membuka Shopee...
+[2026-05-16T08:36:44.180+0000] {subprocess.py:93} INFO - https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-16T08:36:44.180+0000] {subprocess.py:93} INFO - Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T08:36:44.181+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.182+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.182+0000] {subprocess.py:93} INFO - 🔐 LOGIN / CAPTCHA (jika ada)
+[2026-05-16T08:36:44.183+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.184+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.184+0000] {subprocess.py:93} INFO - ✅ Terhubung ke MongoDB: shopee_raw.products
+[2026-05-16T08:36:44.185+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.185+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.186+0000] {subprocess.py:93} INFO - 📄 PAGE 1 / 7
+[2026-05-16T08:36:44.187+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.187+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=0
+[2026-05-16T08:36:44.188+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T08:36:44.188+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T08:36:44.189+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T08:36:44.189+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T08:36:44.190+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=9152eebc1d9-027e-4c7a-b2f0-e2416b771e22
+[2026-05-16T08:36:44.190+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T08:36:44.191+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T08:36:44.192+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T08:36:44.192+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T08:36:44.193+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.193+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.193+0000] {subprocess.py:93} INFO - 📄 PAGE 2 / 7
+[2026-05-16T08:36:44.194+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.194+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=1
+[2026-05-16T08:36:44.195+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T08:36:44.195+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T08:36:44.196+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T08:36:44.197+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T08:36:44.197+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=656241c0174-4999-4baf-857d-1dbae29ba772
+[2026-05-16T08:36:44.198+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T08:36:44.198+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T08:36:44.199+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T08:36:44.199+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T08:36:44.200+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.200+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.201+0000] {subprocess.py:93} INFO - 📄 PAGE 3 / 7
+[2026-05-16T08:36:44.201+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.202+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=2
+[2026-05-16T08:36:44.202+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T08:36:44.203+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T08:36:44.203+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T08:36:44.204+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T08:36:44.204+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=1415e4f8950-bfbd-41ce-91f7-9e40b273c9b9
+[2026-05-16T08:36:44.205+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T08:36:44.206+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T08:36:44.207+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T08:36:44.207+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T08:36:44.208+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.208+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.209+0000] {subprocess.py:93} INFO - 📄 PAGE 4 / 7
+[2026-05-16T08:36:44.210+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.210+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=3
+[2026-05-16T08:36:44.211+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T08:36:44.211+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T08:36:44.212+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T08:36:44.213+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T08:36:44.214+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=85750c8637f-accb-4f5e-92b1-01dd489ce56d
+[2026-05-16T08:36:44.215+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T08:36:44.216+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T08:36:44.217+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T08:36:44.217+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T08:36:44.218+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.219+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.220+0000] {subprocess.py:93} INFO - 📄 PAGE 5 / 7
+[2026-05-16T08:36:44.220+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.221+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=4
+[2026-05-16T08:36:44.221+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T08:36:44.222+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T08:36:44.222+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T08:36:44.223+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T08:36:44.223+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=1762c2b7e2b-1650-4024-a45a-1b1c53ec5677
+[2026-05-16T08:36:44.225+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T08:36:44.226+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T08:36:44.226+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T08:36:44.227+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T08:36:44.227+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.228+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.229+0000] {subprocess.py:93} INFO - 📄 PAGE 6 / 7
+[2026-05-16T08:36:44.229+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.230+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=5
+[2026-05-16T08:36:44.230+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T08:36:44.231+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T08:36:44.231+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T08:36:44.232+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T08:36:44.233+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=80557c814d9-dfc8-471a-a290-82588cac86e8
+[2026-05-16T08:36:44.234+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T08:36:44.234+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T08:36:44.235+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T08:36:44.235+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T08:36:44.236+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.237+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.237+0000] {subprocess.py:93} INFO - 📄 PAGE 7 / 7
+[2026-05-16T08:36:44.238+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.238+0000] {subprocess.py:93} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=6
+[2026-05-16T08:36:44.239+0000] {subprocess.py:93} INFO - 🖱️ Scrolling...
+[2026-05-16T08:36:44.239+0000] {subprocess.py:93} INFO -    scroll 1/3
+[2026-05-16T08:36:44.240+0000] {subprocess.py:93} INFO -    scroll 2/3
+[2026-05-16T08:36:44.240+0000] {subprocess.py:93} INFO -    scroll 3/3
+[2026-05-16T08:36:44.241+0000] {subprocess.py:93} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&tracking_id=7229fcd0e24-24e9-4ea4-8afd-711d70f9c816
+[2026-05-16T08:36:44.241+0000] {subprocess.py:93} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-16T08:36:44.241+0000] {subprocess.py:93} INFO - 🔍 Mengambil item produk...
+[2026-05-16T08:36:44.242+0000] {subprocess.py:93} INFO - 📦 Total item ditemukan: 0
+[2026-05-16T08:36:44.242+0000] {subprocess.py:93} INFO - ❌ Halaman kosong, skip.
+[2026-05-16T08:36:44.243+0000] {subprocess.py:93} INFO - 
+[2026-05-16T08:36:44.243+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.244+0000] {subprocess.py:93} INFO - 📊 SELESAI!
+[2026-05-16T08:36:44.244+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.245+0000] {subprocess.py:93} INFO -    Total produk di-scrape : 0
+[2026-05-16T08:36:44.245+0000] {subprocess.py:93} INFO -    Dokumen baru (insert)  : 0
+[2026-05-16T08:36:44.246+0000] {subprocess.py:93} INFO -    Dokumen updated        : 0
+[2026-05-16T08:36:44.246+0000] {subprocess.py:93} INFO -    Database               : shopee_raw
+[2026-05-16T08:36:44.247+0000] {subprocess.py:93} INFO -    Collection             : products
+[2026-05-16T08:36:44.247+0000] {subprocess.py:93} INFO - =================================
+[2026-05-16T08:36:44.248+0000] {subprocess.py:93} INFO - 🛑 Browser ditutup
+[2026-05-16T08:36:44.751+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-16T08:36:44.764+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-16T08:36:44.932+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=shopee_scraper, task_id=scrape_shopee, run_id=manual__2026-05-16T08:34:40.840755+00:00, execution_date=20260516T083440, start_date=20260516T083446, end_date=20260516T083644
+[2026-05-16T08:36:45.008+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-16T08:36:45.074+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-16T08:36:45.077+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

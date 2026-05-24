@@ -1,0 +1,69 @@
+[2026-05-17T08:20:13.090+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-17T08:20:13.164+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopee_to_mongodb.run_shopee_scraper manual__2026-05-17T08:15:01.813992+00:00 [queued]>
+[2026-05-17T08:20:13.182+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopee_to_mongodb.run_shopee_scraper manual__2026-05-17T08:15:01.813992+00:00 [queued]>
+[2026-05-17T08:20:13.183+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-05-17T08:20:13.210+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): run_shopee_scraper> on 2026-05-17 08:15:01.813992+00:00
+[2026-05-17T08:20:13.218+0000] {standard_task_runner.py:63} INFO - Started process 313 to run task
+[2026-05-17T08:20:13.221+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'shopee_to_mongodb', 'run_shopee_scraper', 'manual__2026-05-17T08:15:01.813992+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/shopee_scraper.py', '--cfg-path', '/tmp/tmp_20ai7wh']
+[2026-05-17T08:20:13.227+0000] {standard_task_runner.py:91} INFO - Job 51: Subtask run_shopee_scraper
+[2026-05-17T08:20:13.354+0000] {task_command.py:426} INFO - Running <TaskInstance: shopee_to_mongodb.run_shopee_scraper manual__2026-05-17T08:15:01.813992+00:00 [running]> on host 30ffdd0a484b
+[2026-05-17T08:20:13.522+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='shopee-pipeline' AIRFLOW_CTX_DAG_ID='shopee_to_mongodb' AIRFLOW_CTX_TASK_ID='run_shopee_scraper' AIRFLOW_CTX_EXECUTION_DATE='2026-05-17T08:15:01.813992+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-17T08:15:01.813992+00:00'
+[2026-05-17T08:20:13.523+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-17T08:20:13.547+0000] {shopee_scraper.py:40} INFO - ▶ Memulai scraper Shopee...
+[2026-05-17T08:20:13.548+0000] {shopee_scraper.py:41} INFO -   Script : /opt/***/dags/playwright_shopee.py
+[2026-05-17T08:20:13.549+0000] {shopee_scraper.py:42} INFO -   Keyword: msi gaming
+[2026-05-17T08:20:34.199+0000] {shopee_scraper.py:52} INFO - OUTPUT SCRAPER:
+🌐 Membuka Chrome Shopee profile...
+🌍 Membuka Shopee search...
+📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+
+[2026-05-17T08:20:34.201+0000] {shopee_scraper.py:54} WARNING - STDERR SCRAPER:
+Traceback (most recent call last):
+  File "/opt/***/dags/playwright_shopee.py", line 262, in <module>
+    collection = get_mongo_collection()
+  File "/opt/***/dags/playwright_shopee.py", line 38, in get_mongo_collection
+    coll.create_index(
+  File "/home/***/.local/lib/python3.8/site-packages/pymongo/collection.py", line 2120, in create_index
+    return self.__create_indexes([index], session, **cmd_options)[0]
+  File "/home/***/.local/lib/python3.8/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/***/.local/lib/python3.8/site-packages/pymongo/collection.py", line 1994, in __create_indexes
+    self._command(
+  File "/home/***/.local/lib/python3.8/site-packages/pymongo/collection.py", line 301, in _command
+    return conn.command(
+  File "/home/***/.local/lib/python3.8/site-packages/pymongo/helpers.py", line 327, in inner
+    return func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.8/site-packages/pymongo/pool.py", line 985, in command
+    return command(
+  File "/home/***/.local/lib/python3.8/site-packages/pymongo/network.py", line 212, in command
+    helpers._check_command_response(
+  File "/home/***/.local/lib/python3.8/site-packages/pymongo/helpers.py", line 233, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: An existing index has the same name as the requested index. When index names are not specified, they are auto generated and can cause conflicts. Please refer to our documentation. Requested index: { v: 2, unique: true, key: { item_id: 1, shop_id: 1, scraped_date: 1 }, name: "item_id_1_shop_id_1_scraped_date_1", sparse: true }, existing index: { v: 2, unique: true, key: { item_id: 1, shop_id: 1, scraped_date: 1 }, name: "item_id_1_shop_id_1_scraped_date_1" }, full error: {'ok': 0.0, 'errmsg': 'An existing index has the same name as the requested index. When index names are not specified, they are auto generated and can cause conflicts. Please refer to our documentation. Requested index: { v: 2, unique: true, key: { item_id: 1, shop_id: 1, scraped_date: 1 }, name: "item_id_1_shop_id_1_scraped_date_1", sparse: true }, existing index: { v: 2, unique: true, key: { item_id: 1, shop_id: 1, scraped_date: 1 }, name: "item_id_1_shop_id_1_scraped_date_1" }', 'code': 86, 'codeName': 'IndexKeySpecsConflict'}
+
+[2026-05-17T08:20:34.203+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-17T08:20:34.204+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/shopee_scraper.py", line 57, in run_scraper
+    raise Exception(
+Exception: Scraper gagal dengan exit code: 1
+STDERR: ndex has the same name as the requested index. When index names are not specified, they are auto generated and can cause conflicts. Please refer to our documentation. Requested index: { v: 2, unique: true, key: { item_id: 1, shop_id: 1, scraped_date: 1 }, name: "item_id_1_shop_id_1_scraped_date_1", sparse: true }, existing index: { v: 2, unique: true, key: { item_id: 1, shop_id: 1, scraped_date: 1 }, name: "item_id_1_shop_id_1_scraped_date_1" }', 'code': 86, 'codeName': 'IndexKeySpecsConflict'}
+
+[2026-05-17T08:20:34.237+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=shopee_to_mongodb, task_id=run_shopee_scraper, run_id=manual__2026-05-17T08:15:01.813992+00:00, execution_date=20260517T081501, start_date=20260517T082013, end_date=20260517T082034
+[2026-05-17T08:20:34.265+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 51 for task run_shopee_scraper (Scraper gagal dengan exit code: 1
+STDERR: ndex has the same name as the requested index. When index names are not specified, they are auto generated and can cause conflicts. Please refer to our documentation. Requested index: { v: 2, unique: true, key: { item_id: 1, shop_id: 1, scraped_date: 1 }, name: "item_id_1_shop_id_1_scraped_date_1", sparse: true }, existing index: { v: 2, unique: true, key: { item_id: 1, shop_id: 1, scraped_date: 1 }, name: "item_id_1_shop_id_1_scraped_date_1" }', 'code': 86, 'codeName': 'IndexKeySpecsConflict'}
+; 313)
+[2026-05-17T08:20:34.298+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-05-17T08:20:34.342+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-17T08:20:34.352+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
