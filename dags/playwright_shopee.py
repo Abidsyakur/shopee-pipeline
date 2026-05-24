@@ -9,8 +9,6 @@ from datetime import datetime, timezone
 from playwright.sync_api import sync_playwright
 from pymongo import MongoClient, UpdateOne
 from pymongo.errors import BulkWriteError
-
-
 # =====================================
 # CONFIG
 # =====================================

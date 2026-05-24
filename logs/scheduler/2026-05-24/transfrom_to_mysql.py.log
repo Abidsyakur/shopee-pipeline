@@ -1,0 +1,45 @@
+[2026-05-24T02:05:56.875+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:05:56.879+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transfrom_to_mysql.py for tasks to queue
+[2026-05-24T02:05:56.888+0000] {logging_mixin.py:188} INFO - [2026-05-24T02:05:56.886+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:05:57.718+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:05:57.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transfrom_to_mysql.py took 1.033 seconds
+[2026-05-24T02:06:28.281+0000] {processor.py:161} INFO - Started process (PID=282) to work on /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:06:28.282+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transfrom_to_mysql.py for tasks to queue
+[2026-05-24T02:06:28.284+0000] {logging_mixin.py:188} INFO - [2026-05-24T02:06:28.283+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:06:29.521+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:06:29.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transfrom_to_mysql.py took 1.301 seconds
+[2026-05-24T02:07:00.247+0000] {processor.py:161} INFO - Started process (PID=404) to work on /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:07:00.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transfrom_to_mysql.py for tasks to queue
+[2026-05-24T02:07:00.256+0000] {logging_mixin.py:188} INFO - [2026-05-24T02:07:00.255+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:07:00.625+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:07:00.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transfrom_to_mysql.py took 0.473 seconds
+[2026-05-24T02:07:30.958+0000] {processor.py:161} INFO - Started process (PID=497) to work on /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:07:30.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transfrom_to_mysql.py for tasks to queue
+[2026-05-24T02:07:30.970+0000] {logging_mixin.py:188} INFO - [2026-05-24T02:07:30.968+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:07:31.223+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:07:31.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transfrom_to_mysql.py took 0.309 seconds
+[2026-05-24T02:08:01.521+0000] {processor.py:161} INFO - Started process (PID=533) to work on /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:08:01.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transfrom_to_mysql.py for tasks to queue
+[2026-05-24T02:08:01.524+0000] {logging_mixin.py:188} INFO - [2026-05-24T02:08:01.524+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:08:01.674+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:08:01.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transfrom_to_mysql.py took 0.183 seconds
+[2026-05-24T02:08:31.795+0000] {processor.py:161} INFO - Started process (PID=656) to work on /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:08:31.796+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transfrom_to_mysql.py for tasks to queue
+[2026-05-24T02:08:31.800+0000] {logging_mixin.py:188} INFO - [2026-05-24T02:08:31.799+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:08:32.030+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:08:32.054+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transfrom_to_mysql.py took 0.271 seconds
+[2026-05-24T02:09:02.347+0000] {processor.py:161} INFO - Started process (PID=789) to work on /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:09:02.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transfrom_to_mysql.py for tasks to queue
+[2026-05-24T02:09:02.352+0000] {logging_mixin.py:188} INFO - [2026-05-24T02:09:02.351+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:09:02.540+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:09:02.572+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transfrom_to_mysql.py took 0.233 seconds
+[2026-05-24T02:09:32.994+0000] {processor.py:161} INFO - Started process (PID=802) to work on /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:09:32.995+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transfrom_to_mysql.py for tasks to queue
+[2026-05-24T02:09:32.997+0000] {logging_mixin.py:188} INFO - [2026-05-24T02:09:32.996+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:09:33.150+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:09:33.180+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transfrom_to_mysql.py took 0.194 seconds
+[2026-05-24T02:10:03.397+0000] {processor.py:161} INFO - Started process (PID=935) to work on /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:10:03.398+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transfrom_to_mysql.py for tasks to queue
+[2026-05-24T02:10:03.400+0000] {logging_mixin.py:188} INFO - [2026-05-24T02:10:03.400+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:10:03.530+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transfrom_to_mysql.py
+[2026-05-24T02:10:03.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transfrom_to_mysql.py took 0.157 seconds
