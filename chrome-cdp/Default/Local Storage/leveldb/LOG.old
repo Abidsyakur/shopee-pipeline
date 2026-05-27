@@ -1,0 +1,35 @@
+2026/05/27-08:11:23.114 4e38 Creating DB D:\shopee_pipeline\chrome-cdp\Default\Local Storage\leveldb since it was missing.
+2026/05/27-08:11:23.135 4e38 Reusing MANIFEST D:\shopee_pipeline\chrome-cdp\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/27-08:18:40.101 32f8 Level-0 table #5: started
+2026/05/27-08:18:40.111 32f8 Level-0 table #5: 26738 bytes OK
+2026/05/27-08:18:40.115 32f8 Delete type=0 #3
+2026/05/27-08:21:40.092 32f8 Level-0 table #7: started
+2026/05/27-08:21:40.097 32f8 Level-0 table #7: 22838 bytes OK
+2026/05/27-08:21:40.100 32f8 Delete type=0 #4
+2026/05/27-08:27:40.098 32f8 Level-0 table #9: started
+2026/05/27-08:27:40.109 32f8 Level-0 table #9: 27373 bytes OK
+2026/05/27-08:27:40.115 32f8 Delete type=0 #6
+2026/05/27-08:34:40.093 32f8 Level-0 table #11: started
+2026/05/27-08:34:40.097 32f8 Level-0 table #11: 20310 bytes OK
+2026/05/27-08:34:40.100 32f8 Delete type=0 #8
+2026/05/27-08:41:40.105 32f8 Level-0 table #13: started
+2026/05/27-08:41:40.113 32f8 Level-0 table #13: 25414 bytes OK
+2026/05/27-08:41:40.118 32f8 Delete type=0 #10
+2026/05/27-08:44:40.101 32f8 Level-0 table #15: started
+2026/05/27-08:44:40.117 32f8 Level-0 table #15: 23165 bytes OK
+2026/05/27-08:44:40.152 32f8 Delete type=0 #12
+2026/05/27-08:44:40.153 32f8 Compacting 4@0 + 1@1 files
+2026/05/27-08:44:40.196 32f8 Generated table #16@0: 22 keys, 8352 bytes
+2026/05/27-08:44:40.196 32f8 Compacted 4@0 + 1@1 files => 8352 bytes
+2026/05/27-08:44:40.206 32f8 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/27-08:44:40.214 32f8 Delete type=2 #7
+2026/05/27-08:44:40.215 32f8 Delete type=2 #9
+2026/05/27-08:44:40.215 32f8 Delete type=2 #11
+2026/05/27-08:44:40.215 32f8 Delete type=2 #13
+2026/05/27-08:44:40.215 32f8 Delete type=2 #15
+2026/05/27-08:48:40.101 4e38 Level-0 table #18: started
+2026/05/27-08:48:40.105 4e38 Level-0 table #18: 28473 bytes OK
+2026/05/27-08:48:40.106 4e38 Delete type=0 #14
+2026/05/27-08:52:40.088 32f8 Level-0 table #20: started
+2026/05/27-08:52:40.092 32f8 Level-0 table #20: 21604 bytes OK
+2026/05/27-08:52:40.094 32f8 Delete type=0 #17

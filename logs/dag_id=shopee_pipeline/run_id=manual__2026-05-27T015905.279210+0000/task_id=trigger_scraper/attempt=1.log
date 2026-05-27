@@ -1,0 +1,53 @@
+[2026-05-27T01:59:08.709+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-27T01:59:08.876+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopee_pipeline.trigger_scraper manual__2026-05-27T01:59:05.279210+00:00 [queued]>
+[2026-05-27T01:59:08.907+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopee_pipeline.trigger_scraper manual__2026-05-27T01:59:05.279210+00:00 [queued]>
+[2026-05-27T01:59:08.909+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-27T01:59:08.967+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): trigger_scraper> on 2026-05-27 01:59:05.279210+00:00
+[2026-05-27T01:59:08.987+0000] {standard_task_runner.py:63} INFO - Started process 3476 to run task
+[2026-05-27T01:59:08.995+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'shopee_pipeline', 'trigger_scraper', 'manual__2026-05-27T01:59:05.279210+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/shopee_dag.py', '--cfg-path', '/tmp/tmploo19s8_']
+[2026-05-27T01:59:09.000+0000] {standard_task_runner.py:91} INFO - Job 150: Subtask trigger_scraper
+[2026-05-27T01:59:09.115+0000] {task_command.py:426} INFO - Running <TaskInstance: shopee_pipeline.trigger_scraper manual__2026-05-27T01:59:05.279210+00:00 [running]> on host 42c92c361076
+[2026-05-27T01:59:09.361+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='shopee-pipeline' AIRFLOW_CTX_DAG_ID='shopee_pipeline' AIRFLOW_CTX_TASK_ID='trigger_scraper' AIRFLOW_CTX_EXECUTION_DATE='2026-05-27T01:59:05.279210+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-27T01:59:05.279210+00:00'
+[2026-05-27T01:59:09.362+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-27T01:59:09.438+0000] {shopee_dag.py:49} INFO - ▶ Task 1: Trigger scraper Shopee...
+[2026-05-27T01:59:09.490+0000] {shopee_dag.py:57} INFO -    Server health: {'status': 'ok'}
+[2026-05-27T01:59:09.490+0000] {shopee_dag.py:65} INFO -    Mengirim request ke http://host.docker.internal:5000/run-scraper...
+[2026-05-27T02:04:33.530+0000] {shopee_dag.py:75} INFO - ✅ Scraper berhasil!
+[2026-05-27T02:04:33.552+0000] {shopee_dag.py:76} INFO - OUTPUT:
+60 | RTX | Rp 13.298.000 | Kab. Tangerang
+  23. MSI Thin 15 B12VE i7 Gen 12 RTX 4050 6 GB 16 GB 512 GB  | Rp 13.499.000 | Bandung
+  24. MSI Katana A15 AI B8VE RYZEN 7 AI 8845HS RTX 4050 16GB  | Rp 14.999.000 | Bandung
+  25. MSI Bravo 15 C7V RTX 4060 | Rp 13.500.000 | Balikpapan
+  26. MSI THIN 15 GF63 Gaming Core i5 Gen 11 RAM 8 GB SSD 512 | Rp 8.200.000 | Semarang
+  27. Laptop Gaming MSI GF63 Cor i5-9300H Gen 9 Ram 8GB/SSD 2 | Rp 7.000.000 | Jakarta Barat
+  28. Laptop Gaming MSI LEOPARD GL65 9SDK-232ID / Core i7-975 | Rp 11.000.000 | Jakarta Barat
+  29. Laptop Gaming MSI GF65 Core i7 Ram 16/512gb Ssd Dual Vg | Rp 9.500.000 | Tangerang Selatan
+  30. laptop msi gf63 12ve core i5 12450H ram 16gb ssd 512gb  | Rp 13.500.000 | Jakarta Pusat
+  31. Laptop MSI GAMING GF63 Thin 11UC Intel Core i7-11800H R | Rp 9.099.000 | Bandung
+  32. LAPTOP GAMING MSI CYBORG 15 A13VF I7-13620H RTX 4060 14 | Rp 15.500.000 | Bandung
+  33. MSI Cyborg 15 B2RWFKG Core 5 210H 512GB SSD 16GB RTX 50 | Rp 21.649.000 | Jakarta Barat
+  34. MSI GF63 THIN GeForce RTX™ 3060 - i5 10500H 16GB 512GB  | Rp 12.000.000 | Jakarta Barat
+  35. Laptop Gaming Msi THIN 15 Intel 5 210H 32GB 2TB SSD RTX | Rp 15.594.000 | Bandung
+  36. MSI Thin A15 B7VE-015ID RYZEN 5 - 7535HS RTX 4050 24GB  | Rp 11.000.000 | Bogor
+  37. Worn MSI Gaming Pro GP72M 7REX LEOPARD PRO i7 GTX1050Ti | Rp 7.999.000 | Jakarta Barat
+  38. MSI Katana 15 B13VEK RTX 4050 i7-13620H RTX 4050 16 GB  | Rp 13.980.000 | Bandung
+  39. MSI GAMING THIN 15 CORE i7 13620H RTX3050 - RAM 16GB 51 | Rp 14.209.000 | Jakarta Utara
+  40. MSI VECTOR 16 HX AI A2XWIG-043 GeForce RTX™ 5080 16GB - | Rp 41.094.000 | Jakarta Utara
+  41. LAPTOP GAMING MSI GP66 LEOPARD 11UG I7-11800H NVIDIA RT | Rp 12.999.999 | Bandung
+  42. Laptop Gaming MSI THIN GF63 intel i7-11800H RAM 16 GB/S | Rp 7.800.000 | Kab. Sukoharjo
+
+MongoDB hal 7: inserted=0 updated=42
+
+========================================
+SELESAI
+========================================
+Total  : 237
+Insert : 26
+Update : 211
+
+[2026-05-27T02:04:33.560+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-05-27T02:04:33.573+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-27T02:04:33.678+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=shopee_pipeline, task_id=trigger_scraper, run_id=manual__2026-05-27T01:59:05.279210+00:00, execution_date=20260527T015905, start_date=20260527T015908, end_date=20260527T020433
+[2026-05-27T02:04:33.756+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-27T02:04:33.860+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-27T02:04:33.864+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

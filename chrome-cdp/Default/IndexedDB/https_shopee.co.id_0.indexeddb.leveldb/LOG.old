@@ -1,0 +1,9 @@
+2026/05/27-09:03:35.401 d40 Reusing MANIFEST D:\shopee_pipeline\chrome-cdp\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/27-09:03:35.401 d40 Recovering log #56
+2026/05/27-09:03:35.402 d40 Reusing old log D:\shopee_pipeline\chrome-cdp\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb/000056.log 
+2026/05/27-09:03:36.032 5f2c Compacting 1@1 + 1@2 files
+2026/05/27-09:03:36.065 5f2c Generated table #59@1: 2368 keys, 574909 bytes
+2026/05/27-09:03:36.066 5f2c Compacted 1@1 + 1@2 files => 574909 bytes
+2026/05/27-09:03:36.067 5f2c compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/05/27-09:03:36.068 5f2c Delete type=2 #54
+2026/05/27-09:03:36.068 5f2c Delete type=2 #57

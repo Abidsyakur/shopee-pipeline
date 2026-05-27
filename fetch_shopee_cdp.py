@@ -1,11 +1,5 @@
 # fetch_shopee_cdp.py
-# Konek ke Chrome yang sudah login via CDP
-# Cara pakai:
-#   1. Buka Chrome dengan CDP:
-#      chrome.exe --remote-debugging-port=9222
-#                 --user-data-dir="C:/Users/mohab/AppData/Local/Google/Chrome/User Data"
-#   2. Buka shopee.co.id di Chrome, pastikan sudah login
-#   3. Jalankan: python fetch_shopee_cdp.py
+# Scraper Shopee via CDP dengan selector terbaru
 
 import os
 import sys
@@ -41,12 +35,10 @@ def get_mongo_collection():
     try:
         coll.create_index(
             [("item_id", 1), ("shop_id", 1), ("scraped_date", 1)],
-            unique=True,
-            sparse=True,
-            name="unique_product_daily"
+            unique=True, sparse=True, name="unique_product_daily"
         )
-    except Exception as e:
-        print(f"Index: {e}")
+    except Exception:
+        pass
     print(f"Terhubung MongoDB: {MONGO_DB}.{MONGO_COLL}")
     return coll
 
@@ -77,7 +69,9 @@ def parse_harga(s):
     if not s:
         return 0.0
     try:
-        return float(s.replace("Rp","").replace(".","").replace(",",".").strip())
+        return float(
+            s.replace("Rp","").replace(".","").replace(",",".").strip()
+        )
     except Exception:
         return 0.0
 
@@ -86,9 +80,20 @@ def extract_ids(link):
     try:
         if not link:
             return None, None
-        parts = link.rstrip("/").split(".")
+        # Format: /nama-produk-i.{shop_id}.{item_id}?...
+        path = link.split("?")[0]
+        parts = path.split(".")
         if len(parts) >= 2:
-            return parts[-2], parts[-1].split("?")[0]
+            item_id = parts[-1]
+            shop_id = parts[-2]
+            # shop_id biasanya setelah "-i."
+            if "-i." in path:
+                after_i = path.split("-i.")[-1]
+                ids = after_i.split(".")
+                if len(ids) >= 2:
+                    shop_id = ids[0]
+                    item_id = ids[1]
+            return shop_id, item_id
     except Exception:
         pass
     return None, None
@@ -117,6 +122,125 @@ def is_blocked(url):
 
 
 # =====================================
+# SCRAPE SATU ITEM
+# =====================================
+
+def scrape_item(item, pg_num):
+    nama      = None
+    harga_str = None
+    harga_num = 0.0
+    link      = None
+    lokasi    = None
+    rating    = None
+
+    # ── Nama produk ──────────────────────────────────────────
+    # Dari aria-label di div role="group"
+    try:
+        aria = item.get_attribute("aria-label") or ""
+        if aria.startswith("Product card:"):
+            nama = aria.replace("Product card:", "").strip()
+    except Exception:
+        pass
+
+    # Fallback: dari div line-clamp-2
+    if not nama:
+        try:
+            nama = item.locator(
+                'div.line-clamp-2, div[class*="line-clamp-2"]'
+            ).first.inner_text(timeout=3000)
+        except Exception:
+            pass
+
+    # ── Link & IDs ───────────────────────────────────────────
+    try:
+        # Link ada di tag <a class="contents ...">
+        href = item.locator("a.contents").first.get_attribute("href")
+        if not href:
+            href = item.locator("a").first.get_attribute("href")
+        if href:
+            if href.startswith("/"):
+                link = "https://shopee.co.id" + href.split("?")[0]
+            else:
+                link = href.split("?")[0]
+    except Exception:
+        pass
+
+    shop_id, item_id = extract_ids(link)
+
+    # ── Harga ────────────────────────────────────────────────
+    # Format baru: <span class="...text-base/5...">16.409.000</span>
+    # didahului <span class="...text-xs...">Rp</span>
+    try:
+        # Cari span yang isinya angka harga (setelah "Rp")
+        spans = item.locator('span[class*="text-base"]')
+        for i in range(spans.count()):
+            txt = spans.nth(i).inner_text().strip()
+            if txt and any(c.isdigit() for c in txt):
+                harga_str = "Rp " + txt
+                harga_num = parse_harga(txt)
+                break
+    except Exception:
+        pass
+
+    # Fallback: cari span berisi "Rp"
+    if not harga_str:
+        try:
+            all_spans = item.locator("span")
+            for i in range(all_spans.count()):
+                txt = all_spans.nth(i).inner_text().strip()
+                if "Rp" in txt and any(c.isdigit() for c in txt):
+                    harga_str = txt
+                    harga_num = parse_harga(txt)
+                    break
+        except Exception:
+            pass
+
+    # ── Lokasi ───────────────────────────────────────────────
+    # <span class="ml-[3px] align-middle">Malang</span>
+    try:
+        lokasi = item.locator(
+            'span.ml-\\[3px\\]'
+        ).first.inner_text(timeout=2000)
+    except Exception:
+        pass
+
+    # Fallback lokasi
+    if not lokasi:
+        try:
+            # Cari elemen yang punya aria-label "location-..."
+            loc_el = item.locator('[aria-label*="location-"]')
+            if loc_el.count() > 0:
+                aria_loc = loc_el.first.get_attribute("aria-label") or ""
+                lokasi = aria_loc.replace("location-", "").strip()
+        except Exception:
+            pass
+
+    # ── Rating ───────────────────────────────────────────────
+    try:
+        for t in item.locator("div").all_inner_texts():
+            tx = t.strip()
+            if len(tx) <= 5 and (tx.startswith("4.") or tx.startswith("5.")):
+                rating = tx
+                break
+    except Exception:
+        pass
+
+    return {
+        "item_id":       item_id,
+        "shop_id":       shop_id,
+        "name":          (nama or "")[:500],
+        "price":         harga_num,
+        "price_raw":     harga_str,
+        "shop_location": lokasi,
+        "rating":        rating,
+        "link":          link,
+        "keyword":       KEYWORD,
+        "page":          pg_num + 1,
+        "scraped_at":    datetime.now(timezone.utc).isoformat(),
+    }
+
+
+# =====================================
 # MAIN
 # =====================================
 
@@ -124,9 +248,9 @@ def main():
     print("=" * 55)
     print("Shopee Scraper via CDP")
     print("=" * 55)
-    print(f"Keyword     : {KEYWORD}")
-    print(f"Halaman     : {MAX_PAGES}")
-    print(f"CDP         : {CDP_ENDPOINT}")
+    print(f"Keyword : {KEYWORD}")
+    print(f"Halaman : {MAX_PAGES}")
+    print(f"CDP     : {CDP_ENDPOINT}")
 
     with sync_playwright() as p:
 
@@ -134,29 +258,27 @@ def main():
         try:
             browser = p.chromium.connect_over_cdp(CDP_ENDPOINT)
         except Exception as e:
-            print(f"\nGagal konek ke Chrome: {e}")
-            print("Pastikan Chrome sudah dibuka dengan --remote-debugging-port=9222")
+            print(f"Gagal konek: {e}")
             sys.exit(1)
 
-        print("Berhasil konek ke Chrome!")
+        print("Berhasil konek!")
 
         contexts = browser.contexts
         if not contexts:
-            print("Tidak ada browser context aktif.")
+            print("Tidak ada context aktif.")
             sys.exit(1)
 
         context = contexts[0]
 
-        # Cari tab Shopee atau buka baru
+        # Cari tab Shopee atau buat baru
         page = None
         for pg in context.pages:
             if "shopee.co.id" in pg.url:
                 page = pg
-                print(f"Pakai tab Shopee: {pg.url}")
+                print(f"Pakai tab: {pg.url}")
                 break
 
         if not page:
-            print("Buka tab Shopee baru...")
             page = context.new_page()
 
         # Buka halaman search
@@ -172,7 +294,7 @@ def main():
         print(f"TITLE : {safe_title(page)}")
 
         if is_blocked(safe_url(page)):
-            print("\nKena traffic verify! Selesaikan di browser lalu jalankan ulang.")
+            print("Kena block! Selesaikan di browser lalu jalankan ulang.")
             sys.exit(1)
 
         print("Session valid, mulai scraping...")
@@ -188,7 +310,11 @@ def main():
             print(f"PAGE {pg_num + 1}/{MAX_PAGES}")
             print(f"{'='*40}")
 
-            url = f"https://shopee.co.id/search?keyword={KEYWORD.replace(' ', '%20')}&page={pg_num}"
+            url = (
+                f"https://shopee.co.id/search"
+                f"?keyword={KEYWORD.replace(' ', '%20')}"
+                f"&page={pg_num}"
+            )
             print("URL:", url)
 
             try:
@@ -202,22 +328,23 @@ def main():
                 print(f"Kena block halaman {pg_num+1}, skip.")
                 continue
 
-            # Scroll
+            # Scroll supaya semua produk ter-load
             print("Scrolling...")
-            for _ in range(5):
+            for _ in range(6):
                 try:
-                    page.mouse.wheel(0, random.randint(1500, 3500))
+                    page.mouse.wheel(0, random.randint(1500, 3000))
                 except Exception:
                     pass
-                time.sleep(random.uniform(1, 3))
+                time.sleep(random.uniform(1.5, 3))
 
             rdelay(2, 4)
             print(f"URL   : {safe_url(page)}")
-            print(f"TITLE : {safe_title(page)}")
 
-            # Ambil produk
+            # ── Selector baru berdasarkan HTML terbaru ──────
+            # Container produk: div[role="group"][aria-label^="Product card:"]
+            print("Mengambil produk...")
             try:
-                items = page.locator('div[data-sqe="item"]')
+                items = page.locator('div[role="group"][aria-label^="Product card:"]')
                 count = items.count()
             except Exception as e:
                 print(f"Gagal ambil items: {e}")
@@ -226,9 +353,11 @@ def main():
             print(f"Item ditemukan: {count}")
 
             if count == 0:
-                print("Produk kosong, skip.")
+                print("Produk kosong, simpan HTML debug.")
                 try:
-                    with open(f"debug_page_{pg_num+1}.html", "w", encoding="utf-8") as f:
+                    with open(
+                        f"debug_page_{pg_num+1}.html", "w", encoding="utf-8"
+                    ) as f:
                         f.write(page.content())
                 except Exception:
                     pass
@@ -238,75 +367,17 @@ def main():
 
             for i in range(count):
                 try:
-                    item      = items.nth(i)
-                    nama      = None
-                    harga_str = None
-                    harga_num = 0.0
-                    link      = None
-                    lokasi    = None
-                    rating    = None
+                    item = items.nth(i)
+                    doc  = scrape_item(item, pg_num)
 
-                    try:
-                        nama = item.locator('div.line-clamp-2').first.inner_text(timeout=3000)
-                    except Exception:
-                        try:
-                            nama = item.locator('div[data-sqe="name"]').first.inner_text(timeout=3000)
-                        except Exception:
-                            pass
-
-                    try:
-                        spans = item.locator("span")
-                        for h in range(spans.count()):
-                            txt = spans.nth(h).inner_text()
-                            if "Rp" in txt:
-                                harga_str = txt
-                                harga_num = parse_harga(harga_str)
-                                break
-                    except Exception:
-                        pass
-
-                    try:
-                        href = item.locator("a").first.get_attribute("href")
-                        if href:
-                            link = "https://shopee.co.id" + href if href.startswith("/") else href
-                    except Exception:
-                        pass
-
-                    try:
-                        lokasi = item.locator('div[class*="truncate"]').last.inner_text(timeout=2000)
-                    except Exception:
-                        pass
-
-                    try:
-                        for t in item.locator("div").all_inner_texts():
-                            tx = t.strip()
-                            if tx.startswith("4.") or tx.startswith("5."):
-                                rating = tx
-                                break
-                    except Exception:
-                        pass
-
-                    shop_id, item_id = extract_ids(link)
-
-                    if not nama:
+                    if not doc["name"]:
                         continue
 
-                    doc = {
-                        "item_id":       item_id,
-                        "shop_id":       shop_id,
-                        "name":          nama,
-                        "price":         harga_num,
-                        "price_raw":     harga_str,
-                        "shop_location": lokasi,
-                        "rating":        rating,
-                        "link":          link,
-                        "keyword":       KEYWORD,
-                        "page":          pg_num + 1,
-                        "scraped_at":    datetime.now(timezone.utc).isoformat(),
-                    }
-
                     page_rows.append(doc)
-                    print(f"  {i+1}. {nama[:55]} | {harga_str}")
+                    print(
+                        f"  {i+1}. {doc['name'][:55]} | "
+                        f"{doc['price_raw']} | {doc['shop_location']}"
+                    )
 
                 except Exception as e:
                     print(f"  Error item {i+1}: {e}")
@@ -316,7 +387,11 @@ def main():
                 total_inserted += result["inserted"]
                 total_matched  += result["matched"]
                 all_rows.extend(page_rows)
-                print(f"\nMongoDB hal {pg_num+1}: inserted={result['inserted']} updated={result['matched']}")
+                print(
+                    f"\nMongoDB hal {pg_num+1}: "
+                    f"inserted={result['inserted']} "
+                    f"updated={result['matched']}"
+                )
 
             rdelay(3, 6)
 
@@ -326,8 +401,6 @@ def main():
         print(f"Total  : {len(all_rows)}")
         print(f"Insert : {total_inserted}")
         print(f"Update : {total_matched}")
-
-        print("\nScraping selesai. Chrome tetap terbuka.")
 
         if len(all_rows) == 0:
             print("Tidak ada data!")
