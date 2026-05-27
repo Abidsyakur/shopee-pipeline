@@ -2637,3 +2637,311 @@
 [2026-05-27T05:18:27.202+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:18:27.201+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-05-27T05:18:27.243+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:18:27.243+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
 [2026-05-27T05:18:27.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.253 seconds
+[2026-05-27T05:18:57.557+0000] {processor.py:161} INFO - Started process (PID=32292) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:18:57.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:18:57.560+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:18:57.559+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:18:57.687+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:18:57.733+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:18:57.733+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:18:57.773+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:18:57.772+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:18:57.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.259 seconds
+[2026-05-27T05:19:28.181+0000] {processor.py:161} INFO - Started process (PID=32420) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:19:28.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:19:28.188+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:19:28.187+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:19:28.359+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:19:28.404+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:19:28.403+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:19:28.447+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:19:28.447+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:19:28.483+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.317 seconds
+[2026-05-27T05:19:58.849+0000] {processor.py:161} INFO - Started process (PID=32433) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:19:58.851+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:19:58.854+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:19:58.853+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:19:59.026+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:19:59.073+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:19:59.072+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:19:59.109+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:19:59.109+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:19:59.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.318 seconds
+[2026-05-27T05:20:29.550+0000] {processor.py:161} INFO - Started process (PID=32544) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:20:29.551+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:20:29.553+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:20:29.553+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:20:29.678+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:20:29.725+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:20:29.725+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:20:29.759+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:20:29.758+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:20:29.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.248 seconds
+[2026-05-27T05:21:00.121+0000] {processor.py:161} INFO - Started process (PID=32670) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:21:00.124+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:21:00.130+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:21:00.129+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:21:00.361+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:21:00.502+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:21:00.501+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:21:00.579+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:21:00.578+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:21:00.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.540 seconds
+[2026-05-27T05:21:31.000+0000] {processor.py:161} INFO - Started process (PID=32683) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:21:31.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:21:31.004+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:21:31.004+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:21:31.116+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:21:31.155+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:21:31.154+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:21:31.188+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:21:31.187+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:21:31.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.232 seconds
+[2026-05-27T05:22:01.783+0000] {processor.py:161} INFO - Started process (PID=32790) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:22:01.784+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:22:01.787+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:22:01.786+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:22:01.914+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:22:01.956+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:22:01.956+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:22:02.003+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:22:02.001+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:22:02.049+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.271 seconds
+[2026-05-27T05:22:32.347+0000] {processor.py:161} INFO - Started process (PID=32896) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:22:32.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:22:32.352+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:22:32.352+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:22:32.596+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:22:32.680+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:22:32.680+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:22:32.733+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:22:32.732+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:22:32.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.448 seconds
+[2026-05-27T05:23:03.277+0000] {processor.py:161} INFO - Started process (PID=32923) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:23:03.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:23:03.280+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:23:03.280+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:23:03.411+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:23:03.449+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:23:03.449+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:23:03.476+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:23:03.476+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:23:03.498+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.229 seconds
+[2026-05-27T05:23:33.682+0000] {processor.py:161} INFO - Started process (PID=33045) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:23:33.683+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:23:33.685+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:23:33.685+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:23:33.794+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:23:33.833+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:23:33.833+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:23:33.865+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:23:33.865+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:23:33.889+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.213 seconds
+[2026-05-27T05:24:04.225+0000] {processor.py:161} INFO - Started process (PID=33160) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:24:04.226+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:24:04.228+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:24:04.228+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:24:04.438+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:24:04.488+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:24:04.487+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:24:04.525+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:24:04.525+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:24:04.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.338 seconds
+[2026-05-27T05:24:34.957+0000] {processor.py:161} INFO - Started process (PID=33173) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:24:34.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:24:34.960+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:24:34.960+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:24:35.078+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:24:35.116+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:24:35.116+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:24:35.146+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:24:35.146+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:24:35.174+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.224 seconds
+[2026-05-27T05:25:05.486+0000] {processor.py:161} INFO - Started process (PID=33291) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:25:05.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:25:05.490+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:25:05.489+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:25:05.607+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:25:05.649+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:25:05.649+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:25:05.684+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:25:05.684+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:25:05.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.233 seconds
+[2026-05-27T05:25:36.056+0000] {processor.py:161} INFO - Started process (PID=33421) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:25:36.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:25:36.059+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:25:36.058+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:25:36.182+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:25:36.226+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:25:36.226+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:25:36.257+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:25:36.256+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:25:36.282+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.234 seconds
+[2026-05-27T05:26:06.602+0000] {processor.py:161} INFO - Started process (PID=33505) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:26:06.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:26:06.605+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:26:06.605+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:26:07.306+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:26:07.409+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:26:07.408+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:26:07.457+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:26:07.456+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:26:07.502+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.908 seconds
+[2026-05-27T05:26:37.646+0000] {processor.py:161} INFO - Started process (PID=33550) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:26:37.647+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:26:37.651+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:26:37.650+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:26:37.807+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:26:37.855+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:26:37.854+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:26:37.902+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:26:37.901+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:26:37.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.315 seconds
+[2026-05-27T05:27:08.257+0000] {processor.py:161} INFO - Started process (PID=33651) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:27:08.259+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:27:08.262+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:27:08.261+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:27:08.470+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:27:08.530+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:27:08.530+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:27:08.584+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:27:08.584+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:27:08.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.402 seconds
+[2026-05-27T05:27:38.846+0000] {processor.py:161} INFO - Started process (PID=33680) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:27:38.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:27:38.849+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:27:38.849+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:27:38.964+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:27:38.998+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:27:38.998+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:27:39.024+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:27:39.024+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:27:39.114+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.274 seconds
+[2026-05-27T05:28:09.569+0000] {processor.py:161} INFO - Started process (PID=33804) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:28:09.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:28:09.575+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:28:09.574+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:28:09.745+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:28:09.782+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:28:09.782+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:28:09.812+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:28:09.812+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:28:09.838+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.285 seconds
+[2026-05-27T05:28:40.063+0000] {processor.py:161} INFO - Started process (PID=33923) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:28:40.066+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:28:40.070+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:28:40.069+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:28:40.259+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:28:40.315+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:28:40.314+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:28:40.358+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:28:40.358+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:28:40.391+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.344 seconds
+[2026-05-27T05:29:10.646+0000] {processor.py:161} INFO - Started process (PID=34019) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:29:10.648+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:29:10.651+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:10.651+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:29:10.846+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:29:10.906+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:10.906+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:29:10.943+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:10.942+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:29:10.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.339 seconds
+[2026-05-27T05:29:41.458+0000] {processor.py:161} INFO - Started process (PID=34052) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:29:41.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:29:41.460+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:41.460+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:29:41.571+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:29:41.604+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:41.604+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:29:41.629+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:41.629+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:29:41.648+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.196 seconds
+[2026-05-27T05:30:11.965+0000] {processor.py:161} INFO - Started process (PID=34172) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:30:11.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:30:11.969+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:30:11.969+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:30:12.248+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:30:12.299+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:30:12.299+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:30:12.340+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:30:12.340+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:30:12.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.420 seconds
+[2026-05-27T05:30:42.682+0000] {processor.py:161} INFO - Started process (PID=34296) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:30:42.683+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:30:42.684+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:30:42.684+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:30:42.792+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:30:42.830+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:30:42.830+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:30:42.856+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:30:42.856+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:30:42.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.201 seconds
+[2026-05-27T05:31:13.299+0000] {processor.py:161} INFO - Started process (PID=34396) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:31:13.306+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:31:13.310+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:13.309+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:31:13.510+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:31:13.568+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:13.567+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:31:13.618+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:13.617+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:31:13.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.374 seconds
+[2026-05-27T05:31:44.070+0000] {processor.py:161} INFO - Started process (PID=34426) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:31:44.071+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:31:44.074+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:44.073+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:31:44.189+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:31:44.222+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:44.221+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:31:44.247+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:44.247+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:31:44.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.211 seconds
+[2026-05-27T05:32:14.624+0000] {processor.py:161} INFO - Started process (PID=34545) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:32:14.625+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:32:14.627+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:32:14.627+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:32:14.730+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:32:14.761+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:32:14.760+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:32:14.786+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:32:14.786+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:32:14.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.190 seconds
+[2026-05-27T05:32:47.668+0000] {processor.py:161} INFO - Started process (PID=34662) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:32:47.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:32:47.683+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:32:47.680+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:32:48.361+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:32:48.690+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:32:48.690+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:32:49.105+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:32:49.104+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:32:49.284+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 1.718 seconds
+[2026-05-27T05:33:20.313+0000] {processor.py:161} INFO - Started process (PID=34733) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:33:20.317+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:33:20.329+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:33:20.328+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:33:20.731+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:33:20.842+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:33:20.842+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:33:20.939+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:33:20.939+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:33:20.986+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.725 seconds
+[2026-05-27T05:33:51.596+0000] {processor.py:161} INFO - Started process (PID=34792) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:33:51.597+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:33:51.600+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:33:51.599+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:33:51.738+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:33:51.797+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:33:51.796+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:33:51.840+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:33:51.839+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:33:51.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.296 seconds
+[2026-05-27T05:34:22.251+0000] {processor.py:161} INFO - Started process (PID=34917) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:34:22.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:34:22.255+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:34:22.254+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:34:22.421+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:34:22.462+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:34:22.462+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:34:22.492+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:34:22.492+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:34:22.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.277 seconds
+[2026-05-27T05:34:52.645+0000] {processor.py:161} INFO - Started process (PID=34939) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:34:52.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:34:52.647+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:34:52.647+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:34:52.805+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:34:52.845+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:34:52.844+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:34:52.875+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:34:52.874+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:34:52.924+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.285 seconds
+[2026-05-27T05:35:23.124+0000] {processor.py:161} INFO - Started process (PID=35059) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:35:23.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:35:23.151+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:23.151+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:35:23.324+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:35:23.361+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:23.361+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:35:23.388+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:23.388+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:35:23.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.327 seconds
+[2026-05-27T05:35:53.841+0000] {processor.py:161} INFO - Started process (PID=35181) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:35:53.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:35:53.849+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:53.849+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:35:54.091+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:35:54.175+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:54.175+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:35:54.216+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:54.216+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:35:54.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.423 seconds
+[2026-05-27T05:36:25.018+0000] {processor.py:161} INFO - Started process (PID=35216) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:36:25.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:36:25.020+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:36:25.020+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:36:25.127+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:36:25.161+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:36:25.161+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:36:25.185+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:36:25.184+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:36:25.208+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.196 seconds
+[2026-05-27T05:36:55.591+0000] {processor.py:161} INFO - Started process (PID=35338) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:36:55.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:36:55.594+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:36:55.594+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:36:55.719+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:36:55.757+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:36:55.757+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:36:55.783+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:36:55.783+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:36:55.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.223 seconds
+[2026-05-27T05:37:26.160+0000] {processor.py:161} INFO - Started process (PID=35351) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:37:26.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:37:26.163+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:37:26.163+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:37:26.266+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:37:26.303+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:37:26.302+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:37:26.327+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:37:26.327+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:37:26.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.194 seconds
+[2026-05-27T05:37:57.012+0000] {processor.py:161} INFO - Started process (PID=35471) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:37:57.014+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:37:57.016+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:37:57.016+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:37:57.129+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:37:57.168+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:37:57.167+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:37:57.193+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:37:57.193+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:37:57.216+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.212 seconds
+[2026-05-27T05:38:27.497+0000] {processor.py:161} INFO - Started process (PID=35556) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:38:27.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:38:27.502+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:38:27.501+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:38:27.767+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:38:27.811+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:38:27.811+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:38:27.845+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:38:27.845+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:38:27.871+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.383 seconds
+[2026-05-27T05:38:58.042+0000] {processor.py:161} INFO - Started process (PID=35601) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:38:58.043+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:38:58.045+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:38:58.045+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:38:58.168+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:38:58.219+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:38:58.219+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:38:58.250+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:38:58.250+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:38:58.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.237 seconds
+[2026-05-27T05:39:28.576+0000] {processor.py:161} INFO - Started process (PID=35720) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:39:28.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:39:28.581+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:39:28.580+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:39:28.770+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:39:28.826+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:39:28.825+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:39:28.873+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:39:28.873+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:39:28.912+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.348 seconds
+[2026-05-27T05:39:59.201+0000] {processor.py:161} INFO - Started process (PID=35744) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:39:59.203+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:39:59.205+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:39:59.204+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:39:59.319+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:39:59.356+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:39:59.356+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:39:59.384+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:39:59.383+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:39:59.404+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.212 seconds
+[2026-05-27T05:40:29.706+0000] {processor.py:161} INFO - Started process (PID=35848) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:40:29.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:40:29.710+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:40:29.710+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:40:29.835+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:40:29.874+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:40:29.873+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:40:29.905+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:40:29.905+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:40:29.934+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.236 seconds
+[2026-05-27T05:41:00.266+0000] {processor.py:161} INFO - Started process (PID=35940) to work on /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:41:00.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopee_dag.py for tasks to queue
+[2026-05-27T05:41:00.272+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:41:00.271+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:41:00.440+0000] {processor.py:840} INFO - DAG(s) 'shopee_pipeline' retrieved from /opt/airflow/dags/shopee_dag.py
+[2026-05-27T05:41:00.489+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:41:00.488+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-27T05:41:00.560+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:41:00.559+0000] {dag.py:3954} INFO - Setting next_dagrun for shopee_pipeline to 2026-05-27 01:00:00+00:00, run_after=2026-05-28 01:00:00+00:00
+[2026-05-27T05:41:00.602+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopee_dag.py took 0.349 seconds

@@ -1,6 +1,3 @@
-# dashboard.py
-# Streamlit dashboard untuk analisis data MSI Gaming di Shopee
-# Jalankan: streamlit run dashboard.py
 
 import streamlit as st
 import pandas as pd

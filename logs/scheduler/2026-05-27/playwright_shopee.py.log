@@ -5760,3 +5760,668 @@ RuntimeError: Shopee traffic verify detected. Update shopee_cookies.json dari Co
 [2026-05-27T05:18:11.483+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=0
 [2026-05-27T05:18:17.056+0000] {logging_mixin.py:188} INFO - 🖱️ Scrolling...
 [2026-05-27T05:18:30.832+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:18:30.831+0000] {timeout.py:68} ERROR - Process timed out, PID: 32160
+[2026-05-27T05:19:01.876+0000] {processor.py:161} INFO - Started process (PID=32297) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:19:01.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:19:01.881+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:19:01.881+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:19:02.754+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:19:03.238+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:19:03.242+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:19:03.522+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:19:09.219+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:19:09.273+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:19:09.488+0000] {logging_mixin.py:188} INFO - ✅ Session valid, mulai scraping...
+[2026-05-27T05:19:09.496+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:19:09.495+0000] {logger.py:96} INFO - {"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x7fedaffbaee0>", "operation": "createIndexes", "topologyDescription": "<TopologyDescription id: 6a167ecdb5ad70947870aed4, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6a167ecdb5ad70947870aed4"}, "remainingTimeMS": 29}
+[2026-05-27T05:19:09.520+0000] {logging_mixin.py:188} INFO - ✅ Terhubung MongoDB: shopee_raw.products
+[2026-05-27T05:19:09.521+0000] {logging_mixin.py:188} INFO - 
+=================================
+[2026-05-27T05:19:09.522+0000] {logging_mixin.py:188} INFO - 📄 PAGE 1/5
+[2026-05-27T05:19:09.523+0000] {logging_mixin.py:188} INFO - =================================
+[2026-05-27T05:19:09.524+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=0
+[2026-05-27T05:19:16.398+0000] {logging_mixin.py:188} INFO - 🖱️ Scrolling...
+[2026-05-27T05:19:31.690+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&next=https%3A%2F%2Fshopee.co.id%2Fsearch%3Fkeyword%3Dmsi%2520gaming%26page%3D0&tracking_id=813c8f38ca8-8716-44d3-a092-55725ce7963c&type=4
+[2026-05-27T05:19:31.740+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:19:31.881+0000] {logging_mixin.py:188} INFO - 🔍 Mengambil item produk...
+[2026-05-27T05:19:31.890+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:19:31.890+0000] {timeout.py:68} ERROR - Process timed out, PID: 32297
+[2026-05-27T05:20:02.097+0000] {processor.py:161} INFO - Started process (PID=32438) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:20:02.098+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:20:02.100+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:20:02.099+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:20:02.680+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:20:02.949+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:20:02.952+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:20:03.093+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:20:11.376+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:20:12.839+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:20:14.302+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:20:14.524+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:20:14.522+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:20:14.546+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:20:14.603+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 12.524 seconds
+[2026-05-27T05:20:44.914+0000] {processor.py:161} INFO - Started process (PID=32549) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:20:44.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:20:44.916+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:20:44.916+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:20:45.402+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:20:45.665+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:20:45.667+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:20:45.787+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:20:52.437+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:20:53.698+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Jual msi gaming Harga Terbaik & Termurah Mei 2026 | Shopee Indonesia
+[2026-05-27T05:20:55.232+0000] {logging_mixin.py:188} INFO - ❌ Kena traffic verify — cookies mungkin expired.
+[2026-05-27T05:20:55.232+0000] {logging_mixin.py:188} INFO - ⚠️  Export ulang cookies dari Chrome dan update shopee_cookies.json
+[2026-05-27T05:21:00.939+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:21:00.937+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 218, in <module>
+    raise RuntimeError(
+RuntimeError: Shopee traffic verify detected. Update shopee_cookies.json dari Cookie-Editor.
+[2026-05-27T05:21:00.940+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:21:00.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 16.061 seconds
+[2026-05-27T05:21:31.225+0000] {processor.py:161} INFO - Started process (PID=32686) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:21:31.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:21:31.231+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:21:31.230+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:21:31.756+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:21:32.057+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:21:32.061+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:21:32.204+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:21:38.329+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:21:39.140+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:21:40.360+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:21:40.522+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:21:40.521+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:21:40.523+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:21:40.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 9.332 seconds
+[2026-05-27T05:22:10.899+0000] {processor.py:161} INFO - Started process (PID=32795) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:22:10.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:22:10.902+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:22:10.902+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:22:11.496+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:22:11.781+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:22:11.784+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:22:11.914+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:22:22.621+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:22:22.648+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:22:23.543+0000] {logging_mixin.py:188} INFO - ✅ Session valid, mulai scraping...
+[2026-05-27T05:22:23.551+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:22:23.550+0000] {logger.py:96} INFO - {"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x7fedaffbaee0>", "operation": "createIndexes", "topologyDescription": "<TopologyDescription id: 6a167f8fac3ecbcaa9ba49c9, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6a167f8fac3ecbcaa9ba49c9"}, "remainingTimeMS": 29}
+[2026-05-27T05:22:23.570+0000] {logging_mixin.py:188} INFO - ✅ Terhubung MongoDB: shopee_raw.products
+[2026-05-27T05:22:23.571+0000] {logging_mixin.py:188} INFO - 
+=================================
+[2026-05-27T05:22:23.572+0000] {logging_mixin.py:188} INFO - 📄 PAGE 1/5
+[2026-05-27T05:22:23.572+0000] {logging_mixin.py:188} INFO - =================================
+[2026-05-27T05:22:23.572+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=0
+[2026-05-27T05:22:33.494+0000] {logging_mixin.py:188} INFO - 🖱️ Scrolling...
+[2026-05-27T05:22:40.912+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:22:40.911+0000] {timeout.py:68} ERROR - Process timed out, PID: 32795
+[2026-05-27T05:23:11.532+0000] {processor.py:161} INFO - Started process (PID=32928) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:23:11.534+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:23:11.536+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:23:11.536+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:23:12.031+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:23:12.309+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:23:12.311+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:23:12.430+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:23:19.777+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:23:20.221+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:23:21.102+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:23:21.242+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:23:21.241+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:23:21.245+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:23:21.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 9.754 seconds
+[2026-05-27T05:23:51.862+0000] {processor.py:161} INFO - Started process (PID=33050) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:23:51.863+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:23:51.865+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:23:51.864+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:23:52.390+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:23:52.632+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:23:52.636+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:23:52.770+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:24:01.418+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:24:01.912+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Jual msi gaming Harga Terbaik & Termurah Mei 2026 | Shopee Indonesia
+[2026-05-27T05:24:02.700+0000] {logging_mixin.py:188} INFO - ❌ Kena traffic verify — cookies mungkin expired.
+[2026-05-27T05:24:02.702+0000] {logging_mixin.py:188} INFO - ⚠️  Export ulang cookies dari Chrome dan update shopee_cookies.json
+[2026-05-27T05:24:07.903+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:24:07.902+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 218, in <module>
+    raise RuntimeError(
+RuntimeError: Shopee traffic verify detected. Update shopee_cookies.json dari Cookie-Editor.
+[2026-05-27T05:24:07.905+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:24:07.934+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 16.080 seconds
+[2026-05-27T05:24:38.228+0000] {processor.py:161} INFO - Started process (PID=33178) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:24:38.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:24:38.232+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:24:38.231+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:24:38.767+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:24:39.030+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:24:39.034+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:24:39.185+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:24:47.941+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:24:48.589+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:24:48.587+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 208, in <module>
+    print("📄 TITLE :", page.title())
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/sync_api/_generated.py", line 9407, in title
+    return mapping.from_maybe_impl(self._sync(self._impl_obj.title()))
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_page.py", line 742, in title
+    return await self._main_frame.title()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_frame.py", line 776, in title
+    return await self._channel.send("title")
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.title: Execution context was destroyed, most likely because of a navigation
+[2026-05-27T05:24:48.590+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:24:48.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 10.396 seconds
+[2026-05-27T05:25:18.849+0000] {processor.py:161} INFO - Started process (PID=33296) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:25:18.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:25:18.852+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:25:18.852+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:25:19.351+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:25:19.541+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:25:19.544+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:25:19.667+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:25:27.697+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:25:28.183+0000] {logging_mixin.py:188} INFO - 📄 TITLE : 
+[2026-05-27T05:25:30.451+0000] {logging_mixin.py:188} INFO - ❌ Kena traffic verify — cookies mungkin expired.
+[2026-05-27T05:25:30.452+0000] {logging_mixin.py:188} INFO - ⚠️  Export ulang cookies dari Chrome dan update shopee_cookies.json
+[2026-05-27T05:25:31.284+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:25:31.283+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 218, in <module>
+    raise RuntimeError(
+RuntimeError: Shopee traffic verify detected. Update shopee_cookies.json dari Cookie-Editor.
+[2026-05-27T05:25:31.285+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:25:31.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 12.472 seconds
+[2026-05-27T05:26:01.527+0000] {processor.py:161} INFO - Started process (PID=33426) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:26:01.528+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:26:01.530+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:26:01.530+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:26:03.213+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:26:05.757+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:26:05.771+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:26:06.004+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:26:13.612+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:26:13.645+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:26:13.985+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:26:14.144+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:26:14.143+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:26:14.146+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:26:14.179+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 12.662 seconds
+[2026-05-27T05:26:44.706+0000] {processor.py:161} INFO - Started process (PID=33555) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:26:44.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:26:44.709+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:26:44.709+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:26:45.298+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:26:45.561+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:26:45.565+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:26:45.706+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:27:08.883+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:27:08.934+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:27:09.233+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:27:09.379+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:27:09.378+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:27:09.381+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:27:09.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 24.712 seconds
+[2026-05-27T05:27:39.900+0000] {processor.py:161} INFO - Started process (PID=33685) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:27:39.902+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:27:39.904+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:27:39.903+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:27:40.507+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:27:40.869+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:27:40.872+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:27:41.133+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:27:47.081+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:27:47.518+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:27:48.463+0000] {logging_mixin.py:188} INFO - ❌ Kena traffic verify — cookies mungkin expired.
+[2026-05-27T05:27:48.464+0000] {logging_mixin.py:188} INFO - ⚠️  Export ulang cookies dari Chrome dan update shopee_cookies.json
+[2026-05-27T05:27:51.533+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:27:51.531+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 218, in <module>
+    raise RuntimeError(
+RuntimeError: Shopee traffic verify detected. Update shopee_cookies.json dari Cookie-Editor.
+[2026-05-27T05:27:51.535+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:27:51.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 11.685 seconds
+[2026-05-27T05:28:21.841+0000] {processor.py:161} INFO - Started process (PID=33809) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:28:21.842+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:28:21.844+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:28:21.844+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:28:22.348+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:28:22.632+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:28:22.637+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:28:22.751+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:28:32.052+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:28:32.084+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:28:32.494+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:28:32.650+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:28:32.646+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:28:32.651+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:28:32.684+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 10.848 seconds
+[2026-05-27T05:29:03.299+0000] {processor.py:161} INFO - Started process (PID=33928) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:29:03.300+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:29:03.302+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:03.302+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:29:03.818+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:29:04.092+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:29:04.096+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:29:04.226+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:29:14.641+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:29:15.185+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:15.184+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 208, in <module>
+    print("📄 TITLE :", page.title())
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/sync_api/_generated.py", line 9407, in title
+    return mapping.from_maybe_impl(self._sync(self._impl_obj.title()))
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_page.py", line 742, in title
+    return await self._main_frame.title()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_frame.py", line 776, in title
+    return await self._channel.send("title")
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.title: Execution context was destroyed, most likely because of a navigation
+[2026-05-27T05:29:15.186+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:29:15.215+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 11.927 seconds
+[2026-05-27T05:29:45.694+0000] {processor.py:161} INFO - Started process (PID=34057) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:29:45.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:29:45.699+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:45.699+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:29:46.215+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:29:46.443+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:29:46.446+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:29:46.552+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:29:54.112+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:29:54.529+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:29:55.913+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:29:56.099+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:29:56.097+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:29:56.100+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:29:56.137+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 10.452 seconds
+[2026-05-27T05:30:26.422+0000] {processor.py:161} INFO - Started process (PID=34177) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:30:26.424+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:30:26.427+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:30:26.426+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:30:27.163+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:30:27.532+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:30:27.538+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:30:27.706+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:30:35.113+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:30:36.005+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:30:36.897+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:30:37.057+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:30:37.055+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:30:37.058+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:30:37.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 10.675 seconds
+[2026-05-27T05:31:07.197+0000] {processor.py:161} INFO - Started process (PID=34301) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:31:07.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:31:07.200+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:07.199+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:31:07.662+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:31:07.974+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:31:07.976+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:31:08.089+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:31:15.998+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:31:16.743+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:16.741+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 208, in <module>
+    print("📄 TITLE :", page.title())
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/sync_api/_generated.py", line 9407, in title
+    return mapping.from_maybe_impl(self._sync(self._impl_obj.title()))
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_page.py", line 742, in title
+    return await self._main_frame.title()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_frame.py", line 776, in title
+    return await self._channel.send("title")
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.title: Execution context was destroyed, most likely because of a navigation
+[2026-05-27T05:31:16.743+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:31:16.767+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 9.578 seconds
+[2026-05-27T05:31:47.288+0000] {processor.py:161} INFO - Started process (PID=34431) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:31:47.289+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:31:47.290+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:47.290+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:31:47.771+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:31:48.097+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:31:48.100+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:31:48.226+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:31:54.666+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:31:55.772+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Jual msi gaming Harga Terbaik & Termurah Mei 2026 | Shopee Indonesia
+[2026-05-27T05:31:56.499+0000] {logging_mixin.py:188} INFO - ❌ Kena traffic verify — cookies mungkin expired.
+[2026-05-27T05:31:56.500+0000] {logging_mixin.py:188} INFO - ⚠️  Export ulang cookies dari Chrome dan update shopee_cookies.json
+[2026-05-27T05:31:59.793+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:31:59.789+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 218, in <module>
+    raise RuntimeError(
+RuntimeError: Shopee traffic verify detected. Update shopee_cookies.json dari Cookie-Editor.
+[2026-05-27T05:31:59.794+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:31:59.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 12.543 seconds
+[2026-05-27T05:32:30.048+0000] {processor.py:161} INFO - Started process (PID=34550) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:32:30.051+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:32:30.097+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:32:30.096+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:32:31.241+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:32:31.705+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:32:31.711+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:32:32.079+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:32:41.094+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:32:41.709+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:32:45.742+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:32:47.113+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:32:47.093+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:32:47.127+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:32:47.637+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 17.609 seconds
+[2026-05-27T05:33:18.241+0000] {processor.py:161} INFO - Started process (PID=34672) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:33:18.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:33:18.245+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:33:18.245+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:33:19.619+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:33:20.246+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:33:20.251+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:33:20.491+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:33:28.411+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:33:28.560+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:33:31.310+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:33:31.308+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 224, in <module>
+    content = page.content()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/sync_api/_generated.py", line 8582, in content
+    return mapping.from_maybe_impl(self._sync(self._impl_obj.content()))
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_page.py", line 502, in content
+    return await self._main_frame.content()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_frame.py", line 416, in content
+    return await self._channel.send("content")
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+[2026-05-27T05:33:31.311+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:33:31.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 13.166 seconds
+[2026-05-27T05:34:01.985+0000] {processor.py:161} INFO - Started process (PID=34797) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:34:01.986+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:34:01.987+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:34:01.987+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:34:02.681+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:34:03.214+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:34:03.218+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:34:03.665+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:34:11.460+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:34:11.513+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:34:11.724+0000] {logging_mixin.py:188} INFO - ✅ Session valid, mulai scraping...
+[2026-05-27T05:34:11.741+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:34:11.740+0000] {logger.py:96} INFO - {"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x7fedaae681f0>", "operation": "createIndexes", "topologyDescription": "<TopologyDescription id: 6a16825359c2e18d013a4568, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6a16825359c2e18d013a4568"}, "remainingTimeMS": 29}
+[2026-05-27T05:34:11.830+0000] {logging_mixin.py:188} INFO - ✅ Terhubung MongoDB: shopee_raw.products
+[2026-05-27T05:34:11.831+0000] {logging_mixin.py:188} INFO - 
+=================================
+[2026-05-27T05:34:11.831+0000] {logging_mixin.py:188} INFO - 📄 PAGE 1/5
+[2026-05-27T05:34:11.832+0000] {logging_mixin.py:188} INFO - =================================
+[2026-05-27T05:34:11.832+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=0
+[2026-05-27T05:34:17.483+0000] {logging_mixin.py:188} INFO - 🖱️ Scrolling...
+[2026-05-27T05:34:31.521+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&next=https%3A%2F%2Fshopee.co.id%2Fsearch%3Fkeyword%3Dmsi%2520gaming%26page%3D0&tracking_id=623ae1f595-d280-4cd8-9ed8-3e2d5956fe4c&type=4
+[2026-05-27T05:34:31.547+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:34:31.837+0000] {logging_mixin.py:188} INFO - 🔍 Mengambil item produk...
+[2026-05-27T05:34:31.912+0000] {logging_mixin.py:188} INFO - 📦 Total item ditemukan: 0
+[2026-05-27T05:34:31.913+0000] {logging_mixin.py:188} INFO - ❌ Produk kosong, simpan HTML debug.
+[2026-05-27T05:34:31.980+0000] {logging_mixin.py:188} INFO - 
+=================================
+[2026-05-27T05:34:31.980+0000] {logging_mixin.py:188} INFO - 📄 PAGE 2/5
+[2026-05-27T05:34:31.981+0000] {logging_mixin.py:188} INFO - =================================
+[2026-05-27T05:34:31.981+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=1
+[2026-05-27T05:34:32.001+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:34:32.001+0000] {timeout.py:68} ERROR - Process timed out, PID: 34797
+[2026-05-27T05:35:02.728+0000] {processor.py:161} INFO - Started process (PID=34944) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:35:02.729+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:35:02.731+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:02.731+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:35:03.332+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:35:03.596+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:35:03.600+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:35:03.735+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:35:12.016+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:35:12.557+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:12.555+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 208, in <module>
+    print("📄 TITLE :", page.title())
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/sync_api/_generated.py", line 9407, in title
+    return mapping.from_maybe_impl(self._sync(self._impl_obj.title()))
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_page.py", line 742, in title
+    return await self._main_frame.title()
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_frame.py", line 776, in title
+    return await self._channel.send("title")
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.8/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.title: Execution context was destroyed, most likely because of a navigation
+[2026-05-27T05:35:12.557+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:35:12.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 9.861 seconds
+[2026-05-27T05:35:42.713+0000] {processor.py:161} INFO - Started process (PID=35064) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:35:42.714+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:35:42.716+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:42.715+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:35:43.198+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:35:43.489+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:35:43.491+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:35:43.605+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:35:50.341+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:35:50.367+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:35:50.549+0000] {logging_mixin.py:188} INFO - ✅ Session valid, mulai scraping...
+[2026-05-27T05:35:50.566+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:35:50.565+0000] {logger.py:96} INFO - {"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x7fedaae681f0>", "operation": "createIndexes", "topologyDescription": "<TopologyDescription id: 6a1682b6d8a2e098ca44af7b, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6a1682b6d8a2e098ca44af7b"}, "remainingTimeMS": 29}
+[2026-05-27T05:35:50.590+0000] {logging_mixin.py:188} INFO - ✅ Terhubung MongoDB: shopee_raw.products
+[2026-05-27T05:35:50.591+0000] {logging_mixin.py:188} INFO - 
+=================================
+[2026-05-27T05:35:50.591+0000] {logging_mixin.py:188} INFO - 📄 PAGE 1/5
+[2026-05-27T05:35:50.592+0000] {logging_mixin.py:188} INFO - =================================
+[2026-05-27T05:35:50.592+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=0
+[2026-05-27T05:35:55.284+0000] {logging_mixin.py:188} INFO - 🖱️ Scrolling...
+[2026-05-27T05:36:08.937+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&next=https%3A%2F%2Fshopee.co.id%2Fsearch%3Fkeyword%3Dmsi%2520gaming%26page%3D0&tracking_id=84329c90399-2a59-486c-ac94-c0f3bdd29d6a&type=4
+[2026-05-27T05:36:08.960+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:36:09.105+0000] {logging_mixin.py:188} INFO - 🔍 Mengambil item produk...
+[2026-05-27T05:36:09.145+0000] {logging_mixin.py:188} INFO - 📦 Total item ditemukan: 0
+[2026-05-27T05:36:09.146+0000] {logging_mixin.py:188} INFO - ❌ Produk kosong, simpan HTML debug.
+[2026-05-27T05:36:09.234+0000] {logging_mixin.py:188} INFO - 
+=================================
+[2026-05-27T05:36:09.235+0000] {logging_mixin.py:188} INFO - 📄 PAGE 2/5
+[2026-05-27T05:36:09.235+0000] {logging_mixin.py:188} INFO - =================================
+[2026-05-27T05:36:09.235+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=1
+[2026-05-27T05:36:12.731+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:36:12.731+0000] {timeout.py:68} ERROR - Process timed out, PID: 35064
+[2026-05-27T05:36:43.450+0000] {processor.py:161} INFO - Started process (PID=35221) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:36:43.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:36:43.453+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:36:43.452+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:36:43.855+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:36:44.077+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:36:44.079+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:36:44.189+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:36:52.696+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:36:52.732+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:36:52.888+0000] {logging_mixin.py:188} INFO - ✅ Session valid, mulai scraping...
+[2026-05-27T05:36:52.894+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:36:52.894+0000] {logger.py:96} INFO - {"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x7fedaae681f0>", "operation": "createIndexes", "topologyDescription": "<TopologyDescription id: 6a1682f40e4493a253e5243c, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6a1682f40e4493a253e5243c"}, "remainingTimeMS": 29}
+[2026-05-27T05:36:52.912+0000] {logging_mixin.py:188} INFO - ✅ Terhubung MongoDB: shopee_raw.products
+[2026-05-27T05:36:52.913+0000] {logging_mixin.py:188} INFO - 
+=================================
+[2026-05-27T05:36:52.913+0000] {logging_mixin.py:188} INFO - 📄 PAGE 1/5
+[2026-05-27T05:36:52.914+0000] {logging_mixin.py:188} INFO - =================================
+[2026-05-27T05:36:52.914+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=0
+[2026-05-27T05:36:59.593+0000] {logging_mixin.py:188} INFO - 🖱️ Scrolling...
+[2026-05-27T05:37:13.458+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:37:13.458+0000] {timeout.py:68} ERROR - Process timed out, PID: 35221
+[2026-05-27T05:37:44.541+0000] {processor.py:161} INFO - Started process (PID=35356) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:37:44.542+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:37:44.543+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:37:44.543+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:37:44.975+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:37:45.228+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:37:45.230+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:37:45.323+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:37:54.487+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:37:54.536+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:37:54.793+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:37:54.888+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:37:54.887+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:37:54.889+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:37:54.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 10.379 seconds
+[2026-05-27T05:38:25.474+0000] {processor.py:161} INFO - Started process (PID=35481) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:38:25.475+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:38:25.476+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:38:25.476+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:38:25.953+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:38:26.170+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:38:26.173+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:38:26.282+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:38:37.293+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:38:37.342+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:38:37.612+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:38:37.791+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:38:37.790+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:38:37.792+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:38:37.820+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 12.353 seconds
+[2026-05-27T05:39:08.161+0000] {processor.py:161} INFO - Started process (PID=35606) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:39:08.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:39:08.170+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:39:08.169+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:39:08.670+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:39:08.876+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:39:08.879+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:39:08.982+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:39:17.771+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:39:17.797+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:39:17.950+0000] {logging_mixin.py:188} INFO - ✅ Session valid, mulai scraping...
+[2026-05-27T05:39:17.956+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:39:17.955+0000] {logger.py:96} INFO - {"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x7fedaae6a280>", "operation": "createIndexes", "topologyDescription": "<TopologyDescription id: 6a1683856452b9bb8ffb01f9, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6a1683856452b9bb8ffb01f9"}, "remainingTimeMS": 29}
+[2026-05-27T05:39:17.972+0000] {logging_mixin.py:188} INFO - ✅ Terhubung MongoDB: shopee_raw.products
+[2026-05-27T05:39:17.973+0000] {logging_mixin.py:188} INFO - 
+=================================
+[2026-05-27T05:39:17.973+0000] {logging_mixin.py:188} INFO - 📄 PAGE 1/5
+[2026-05-27T05:39:17.974+0000] {logging_mixin.py:188} INFO - =================================
+[2026-05-27T05:39:17.974+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=0
+[2026-05-27T05:39:23.902+0000] {logging_mixin.py:188} INFO - 🖱️ Scrolling...
+[2026-05-27T05:39:37.320+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&next=https%3A%2F%2Fshopee.co.id%2Fsearch%3Fkeyword%3Dmsi%2520gaming%26page%3D0&tracking_id=594540075c5-ecdf-4e0c-86d3-84e96543b62e&type=4
+[2026-05-27T05:39:37.356+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:39:37.517+0000] {logging_mixin.py:188} INFO - 🔍 Mengambil item produk...
+[2026-05-27T05:39:37.578+0000] {logging_mixin.py:188} INFO - 📦 Total item ditemukan: 0
+[2026-05-27T05:39:37.579+0000] {logging_mixin.py:188} INFO - ❌ Produk kosong, simpan HTML debug.
+[2026-05-27T05:39:37.632+0000] {logging_mixin.py:188} INFO - 
+=================================
+[2026-05-27T05:39:37.633+0000] {logging_mixin.py:188} INFO - 📄 PAGE 2/5
+[2026-05-27T05:39:37.634+0000] {logging_mixin.py:188} INFO - =================================
+[2026-05-27T05:39:37.635+0000] {logging_mixin.py:188} INFO - 🌍 https://shopee.co.id/search?keyword=msi%20gaming&page=1
+[2026-05-27T05:39:38.181+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:39:38.180+0000] {timeout.py:68} ERROR - Process timed out, PID: 35606
+[2026-05-27T05:40:08.499+0000] {processor.py:161} INFO - Started process (PID=35749) to work on /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:40:08.500+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/playwright_shopee.py for tasks to queue
+[2026-05-27T05:40:08.501+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:40:08.501+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:40:09.275+0000] {logging_mixin.py:188} INFO - 🌐 Membuka Chromium...
+[2026-05-27T05:40:09.533+0000] {logging_mixin.py:188} INFO - 🍪 Inject cookies Shopee...
+[2026-05-27T05:40:09.537+0000] {logging_mixin.py:188} INFO - ✅ 16 cookies berhasil diload dari /opt/airflow/dags/shopee_cookies.json
+[2026-05-27T05:40:09.658+0000] {logging_mixin.py:188} INFO - 🌍 Membuka Shopee search...
+[2026-05-27T05:40:20.380+0000] {logging_mixin.py:188} INFO - 📄 URL   : https://shopee.co.id/search?keyword=msi%20gaming
+[2026-05-27T05:40:21.610+0000] {logging_mixin.py:188} INFO - 📄 TITLE : Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya
+[2026-05-27T05:40:22.702+0000] {logging_mixin.py:188} INFO - ❌ Cookies tidak valid atau sudah expired.
+[2026-05-27T05:40:22.874+0000] {logging_mixin.py:188} INFO - [2026-05-27T05:40:22.872+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/playwright_shopee.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/playwright_shopee.py", line 228, in <module>
+    raise RuntimeError("Cookies tidak valid. Export ulang dari Chrome.")
+RuntimeError: Cookies tidak valid. Export ulang dari Chrome.
+[2026-05-27T05:40:22.876+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/playwright_shopee.py
+[2026-05-27T05:40:22.909+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/playwright_shopee.py took 14.418 seconds
