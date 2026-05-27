@@ -1,2 +1,3 @@
-2026/05/19-20:43:54.686 1bf4 Creating DB D:\shopee_pipeline\chrome-shopee\Default\Service Worker\Database since it was missing.
-2026/05/19-20:43:54.694 1bf4 Reusing MANIFEST D:\shopee_pipeline\chrome-shopee\Default\Service Worker\Database/MANIFEST-000001
+2026/05/24-09:18:49.386 598c Reusing MANIFEST D:\shopee_pipeline\chrome-shopee\Default\Service Worker\Database/MANIFEST-000001
+2026/05/24-09:18:49.387 598c Recovering log #3
+2026/05/24-09:18:49.387 598c Reusing old log D:\shopee_pipeline\chrome-shopee\Default\Service Worker\Database/000003.log 

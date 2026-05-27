@@ -1,2 +1,3 @@
-2026/05/19-20:43:49.139 1bf4 Creating DB D:\shopee_pipeline\chrome-shopee\Default\Sync Data\LevelDB since it was missing.
-2026/05/19-20:43:49.161 1bf4 Reusing MANIFEST D:\shopee_pipeline\chrome-shopee\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/05/24-09:18:49.384 5984 Reusing MANIFEST D:\shopee_pipeline\chrome-shopee\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/05/24-09:18:49.384 5984 Recovering log #3
+2026/05/24-09:18:49.385 5984 Reusing old log D:\shopee_pipeline\chrome-shopee\Default\Sync Data\LevelDB/000003.log 

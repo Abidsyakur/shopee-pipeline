@@ -1,2 +1,3 @@
-2026/05/19-20:43:49.148 3a10 Creating DB D:\shopee_pipeline\chrome-shopee\Default\Site Characteristics Database since it was missing.
-2026/05/19-20:43:49.180 3a10 Reusing MANIFEST D:\shopee_pipeline\chrome-shopee\Default\Site Characteristics Database/MANIFEST-000001
+2026/05/24-09:18:49.392 58ac Reusing MANIFEST D:\shopee_pipeline\chrome-shopee\Default\Site Characteristics Database/MANIFEST-000001
+2026/05/24-09:18:49.392 58ac Recovering log #3
+2026/05/24-09:18:49.393 58ac Reusing old log D:\shopee_pipeline\chrome-shopee\Default\Site Characteristics Database/000003.log 

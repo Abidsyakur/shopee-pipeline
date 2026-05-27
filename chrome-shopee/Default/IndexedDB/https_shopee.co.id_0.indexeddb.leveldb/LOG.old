@@ -1,2 +1,3 @@
-2026/05/19-20:43:59.686 17c Creating DB D:\shopee_pipeline\chrome-shopee\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb since it was missing.
-2026/05/19-20:43:59.694 17c Reusing MANIFEST D:\shopee_pipeline\chrome-shopee\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/24-09:17:05.449 46f8 Reusing MANIFEST D:\shopee_pipeline\chrome-shopee\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/24-09:17:05.450 46f8 Recovering log #3
+2026/05/24-09:17:05.451 46f8 Reusing old log D:\shopee_pipeline\chrome-shopee\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb/000003.log 
