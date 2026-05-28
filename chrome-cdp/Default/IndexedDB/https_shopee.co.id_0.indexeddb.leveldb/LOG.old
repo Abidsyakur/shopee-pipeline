@@ -1,9 +1,14 @@
-2026/05/27-09:03:35.401 d40 Reusing MANIFEST D:\shopee_pipeline\chrome-cdp\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb/MANIFEST-000001
-2026/05/27-09:03:35.401 d40 Recovering log #56
-2026/05/27-09:03:35.402 d40 Reusing old log D:\shopee_pipeline\chrome-cdp\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb/000056.log 
-2026/05/27-09:03:36.032 5f2c Compacting 1@1 + 1@2 files
-2026/05/27-09:03:36.065 5f2c Generated table #59@1: 2368 keys, 574909 bytes
-2026/05/27-09:03:36.066 5f2c Compacted 1@1 + 1@2 files => 574909 bytes
-2026/05/27-09:03:36.067 5f2c compacted to: files[ 0 0 1 0 0 0 0 ]
-2026/05/27-09:03:36.068 5f2c Delete type=2 #54
-2026/05/27-09:03:36.068 5f2c Delete type=2 #57
+2026/05/28-08:31:56.255 1090 Reusing MANIFEST D:\shopee_pipeline\chrome-cdp\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/28-08:31:56.256 1090 Recovering log #73
+2026/05/28-08:31:56.265 1090 Reusing old log D:\shopee_pipeline\chrome-cdp\Default\IndexedDB\https_shopee.co.id_0.indexeddb.leveldb/000073.log 
+2026/05/28-08:31:56.265 1090 Delete type=2 #71
+2026/05/28-08:31:56.265 1090 Delete type=2 #74
+2026/05/28-08:32:12.029 1090 Level-0 table #79: started
+2026/05/28-08:32:12.114 1090 Level-0 table #79: 2413020 bytes OK
+2026/05/28-08:32:12.116 1090 Delete type=0 #73
+2026/05/28-08:32:22.418 1090 Compacting 1@1 + 1@2 files
+2026/05/28-08:32:22.468 1090 Generated table #80@1: 2775 keys, 382552 bytes
+2026/05/28-08:32:22.469 1090 Compacted 1@1 + 1@2 files => 382552 bytes
+2026/05/28-08:32:22.471 1090 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/05/28-08:32:22.472 1090 Delete type=2 #76
+2026/05/28-08:32:22.472 1090 Delete type=2 #79

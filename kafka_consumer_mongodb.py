@@ -1,6 +1,3 @@
-# Consumer 1: baca dari Kafka topic → simpan ke MongoDB
-# Jalankan di terminal terpisah: python kafka_consumer_mongodb.py
-
 import json
 import signal
 import sys

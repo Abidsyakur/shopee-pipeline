@@ -1,3 +1,12 @@
-2026/05/27-08:55:59.056 d40 Reusing MANIFEST D:\shopee_pipeline\chrome-cdp\Default\Sync Data\LevelDB/MANIFEST-000001
-2026/05/27-08:55:59.057 d40 Recovering log #3
-2026/05/27-08:55:59.057 d40 Reusing old log D:\shopee_pipeline\chrome-cdp\Default\Sync Data\LevelDB/000003.log 
+2026/05/28-08:24:25.105 1090 Reusing MANIFEST D:\shopee_pipeline\chrome-cdp\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/05/28-08:24:25.107 1090 Recovering log #3
+2026/05/28-08:24:25.112 1090 Reusing old log D:\shopee_pipeline\chrome-cdp\Default\Sync Data\LevelDB/000003.log 
+2026/05/28-08:27:32.372 4114 Level-0 table #5: started
+2026/05/28-08:27:32.394 4114 Level-0 table #5: 110668 bytes OK
+2026/05/28-08:27:32.401 4114 Delete type=0 #3
+2026/05/28-08:28:47.256 1090 Level-0 table #7: started
+2026/05/28-08:28:47.283 1090 Level-0 table #7: 391536 bytes OK
+2026/05/28-08:28:47.288 1090 Delete type=0 #4
+2026/05/28-08:30:06.712 5434 Level-0 table #9: started
+2026/05/28-08:30:06.748 5434 Level-0 table #9: 404419 bytes OK
+2026/05/28-08:30:06.778 5434 Delete type=0 #6
